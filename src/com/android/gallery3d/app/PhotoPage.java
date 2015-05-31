@@ -1271,8 +1271,7 @@ public abstract class PhotoPage extends ActivityState implements
         refreshBottomControlsWhenReady();
         if (mShowSpinner) {
             if (enabled) {
-                mActionBar.enableAlbumModeMenu(
-                        GalleryActionBar.ALBUM_FILMSTRIP_MODE_SELECTED, this);
+
             } else {
                 mActionBar.disableAlbumModeMenu(true);
             }
@@ -1347,8 +1346,7 @@ public abstract class PhotoPage extends ActivityState implements
         mActionBar.addOnMenuVisibilityListener(mMenuVisibilityListener);
         refreshBottomControlsWhenReady();
         if (mShowSpinner && mPhotoView.getFilmMode()) {
-            mActionBar.enableAlbumModeMenu(
-                    GalleryActionBar.ALBUM_FILMSTRIP_MODE_SELECTED, this);
+
         }
         if (!mShowBars) {
             mActionBar.hide();

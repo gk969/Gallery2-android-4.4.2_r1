@@ -339,7 +339,7 @@ public class AlbumPage extends ActivityState implements GalleryActionBar.Cluster
             Context context = mActivity.getAndroidContext();
             data.putString(AlbumSetPage.KEY_SET_TITLE, mMediaSet.getName());
             data.putString(AlbumSetPage.KEY_SET_SUBTITLE,
-                    GalleryActionBar.getClusterByTypeString(context, clusterType));
+            		context.getString(R.string.group_by_album));
         }
 
         // mAlbumView.savePositions(PositionRepository.getInstance(mActivity));
@@ -399,9 +399,6 @@ public class AlbumPage extends ActivityState implements GalleryActionBar.Cluster
                 mParentMediaSetString != null;
         GalleryActionBar actionBar = mActivity.getGalleryActionBar();
         actionBar.setDisplayOptions(enableHomeButton, false);
-        if (!mGetContent) {
-            actionBar.enableAlbumModeMenu(GalleryActionBar.ALBUM_GRID_MODE_SELECTED, this);
-        }
 
         // Set the reload bit here to prevent it exit this page in clearLoadingBit().
         setLoadingBit(BIT_LOADING_RELOAD);
@@ -584,10 +581,6 @@ public class AlbumPage extends ActivityState implements GalleryActionBar.Cluster
                 mSelectionManager.setAutoLeaveSelectionMode(false);
                 mSelectionManager.enterSelectionMode();
                 return true;
-            case R.id.action_group_by: {
-                mActivity.getGalleryActionBar().showClusterDialog(this);
-                return true;
-            }
             case R.id.action_slideshow: {
                 mInCameraAndWantQuitOnPause = false;
                 Bundle data = new Bundle();

@@ -464,9 +464,7 @@ public class AlbumSetPage extends ActivityState implements
         mAlbumSetView.resume();
         mEyePosition.resume();
         mActionModeHandler.resume();
-        if (mShowClusterMenu) {
-            mActionBar.enableClusterMenu(mSelectedAction, this);
-        }
+
         if (!mInitialSynced) {
             setLoadingBit(BIT_LOADING_SYNC);
             mSyncTask = mMediaSet.requestSync(AlbumSetPage.this);
@@ -543,8 +541,7 @@ public class AlbumSetPage extends ActivityState implements
             inflater.inflate(R.menu.albumset, menu);
             boolean wasShowingClusterMenu = mShowClusterMenu;
             mShowClusterMenu = !inAlbum;
-            boolean selectAlbums = !inAlbum &&
-                    mActionBar.getClusterTypeAction() == FilterUtils.CLUSTER_BY_ALBUM;
+            boolean selectAlbums = !inAlbum;
             MenuItem selectItem = menu.findItem(R.id.action_select);
             selectItem.setTitle(activity.getString(
                     selectAlbums ? R.string.select_album : R.string.select_group));
@@ -564,7 +561,7 @@ public class AlbumSetPage extends ActivityState implements
             mActionBar.setSubtitle(mSubtitle);
             if (mShowClusterMenu != wasShowingClusterMenu) {
                 if (mShowClusterMenu) {
-                    mActionBar.enableClusterMenu(mSelectedAction, this);
+                	
                 } else {
                     mActionBar.disableClusterMenu(true);
                 }
@@ -637,10 +634,7 @@ public class AlbumSetPage extends ActivityState implements
 
     private String getSelectedString() {
         int count = mSelectionManager.getSelectedCount();
-        int action = mActionBar.getClusterTypeAction();
-        int string = action == FilterUtils.CLUSTER_BY_ALBUM
-                ? R.plurals.number_of_albums_selected
-                : R.plurals.number_of_groups_selected;
+        int string = R.plurals.number_of_albums_selected;
         String format = mActivity.getResources().getQuantityString(string, count);
         return String.format(format, count);
     }
@@ -656,9 +650,7 @@ public class AlbumSetPage extends ActivityState implements
             }
             case SelectionManager.LEAVE_SELECTION_MODE: {
                 mActionModeHandler.finishActionMode();
-                if (mShowClusterMenu) {
-                    mActionBar.enableClusterMenu(mSelectedAction, this);
-                }
+
                 mRootPane.invalidate();
                 break;
             }

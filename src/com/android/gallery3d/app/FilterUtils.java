@@ -80,38 +80,7 @@ public class FilterUtils {
     public static void setupMenuItems(GalleryActionBar actionBar, Path path, boolean inAlbum) {
         int[] result = new int[6];
         getAppliedFilters(path, result);
-        int ctype = result[CLUSTER_TYPE];
-        int ftype = result[FILTER_TYPE];
-        int ftypef = result[FILTER_TYPE_F];
-        int ccurrent = result[CLUSTER_CURRENT_TYPE];
-        int fcurrent = result[FILTER_CURRENT_TYPE];
 
-        setMenuItemApplied(actionBar, CLUSTER_BY_TIME,
-                (ctype & CLUSTER_BY_TIME) != 0, (ccurrent & CLUSTER_BY_TIME) != 0);
-        setMenuItemApplied(actionBar, CLUSTER_BY_LOCATION,
-                (ctype & CLUSTER_BY_LOCATION) != 0, (ccurrent & CLUSTER_BY_LOCATION) != 0);
-        setMenuItemApplied(actionBar, CLUSTER_BY_TAG,
-                (ctype & CLUSTER_BY_TAG) != 0, (ccurrent & CLUSTER_BY_TAG) != 0);
-        setMenuItemApplied(actionBar, CLUSTER_BY_FACE,
-                (ctype & CLUSTER_BY_FACE) != 0, (ccurrent & CLUSTER_BY_FACE) != 0);
-
-        actionBar.setClusterItemVisibility(CLUSTER_BY_ALBUM, !inAlbum || ctype == 0);
-
-        setMenuItemApplied(actionBar, R.id.action_cluster_album, ctype == 0,
-                ccurrent == 0);
-
-        // A filtering is available if it's not applied, and the old filtering
-        // (if any) is not fixed.
-        setMenuItemAppliedEnabled(actionBar, R.string.show_images_only,
-                (ftype & FILTER_IMAGE_ONLY) != 0,
-                (ftype & FILTER_IMAGE_ONLY) == 0 && ftypef == 0,
-                (fcurrent & FILTER_IMAGE_ONLY) != 0);
-        setMenuItemAppliedEnabled(actionBar, R.string.show_videos_only,
-                (ftype & FILTER_VIDEO_ONLY) != 0,
-                (ftype & FILTER_VIDEO_ONLY) == 0 && ftypef == 0,
-                (fcurrent & FILTER_VIDEO_ONLY) != 0);
-        setMenuItemAppliedEnabled(actionBar, R.string.show_all,
-                ftype == 0, ftype != 0 && ftypef == 0, fcurrent == 0);
     }
 
     // Gets the filters applied in the path.
@@ -163,14 +132,6 @@ public class FilterUtils {
         return 0;
     }
 
-    private static void setMenuItemApplied(
-            GalleryActionBar model, int id, boolean applied, boolean updateTitle) {
-        model.setClusterItemEnabled(id, !applied);
-    }
-
-    private static void setMenuItemAppliedEnabled(GalleryActionBar model, int id, boolean applied, boolean enabled, boolean updateTitle) {
-        model.setClusterItemEnabled(id, enabled);
-    }
 
     // Add a specified filter to the path.
     public static String newFilterPath(String base, int filterType) {
