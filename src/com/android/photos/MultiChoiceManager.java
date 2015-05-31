@@ -34,8 +34,6 @@ import android.widget.ShareActionProvider.OnShareTargetSelectedListener;
 import com.android.gallery3d.R;
 import com.android.gallery3d.app.TrimVideo;
 import com.android.gallery3d.data.MediaObject;
-import com.android.gallery3d.filtershow.FilterShowActivity;
-import com.android.gallery3d.filtershow.crop.CropActivity;
 import com.android.gallery3d.util.GalleryUtils;
 
 import java.util.ArrayList;
@@ -238,11 +236,7 @@ public class MultiChoiceManager implements MultiChoiceModeListener,
                 mContext.startActivity(Intent.createChooser(intent, null));
                 return;
             case R.id.menu_crop:
-                intent.setDataAndType(uri, mime)
-                      .setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-                      .setAction(CropActivity.CROP_ACTION)
-                      .setClass(mContext, FilterShowActivity.class);
-                mContext.startActivity(intent);
+                
                 return;
             case R.id.menu_trim:
                 intent.setData(uri)

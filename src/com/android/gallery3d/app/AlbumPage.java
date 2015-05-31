@@ -39,8 +39,6 @@ import com.android.gallery3d.data.MediaItem;
 import com.android.gallery3d.data.MediaObject;
 import com.android.gallery3d.data.MediaSet;
 import com.android.gallery3d.data.Path;
-import com.android.gallery3d.filtershow.crop.CropActivity;
-import com.android.gallery3d.filtershow.crop.CropExtras;
 import com.android.gallery3d.glrenderer.FadeTexture;
 import com.android.gallery3d.glrenderer.GLCanvas;
 import com.android.gallery3d.ui.ActionModeHandler;
@@ -316,22 +314,10 @@ public class AlbumPage extends ActivityState implements GalleryActionBar.Cluster
     private void onGetContent(final MediaItem item) {
         DataManager dm = mActivity.getDataManager();
         Activity activity = mActivity;
-        if (mData.getString(GalleryActivity.EXTRA_CROP) != null) {
-            Uri uri = dm.getContentUri(item.getPath());
-            Intent intent = new Intent(CropActivity.CROP_ACTION, uri)
-                    .addFlags(Intent.FLAG_ACTIVITY_FORWARD_RESULT)
-                    .putExtras(getData());
-            if (mData.getParcelable(MediaStore.EXTRA_OUTPUT) == null) {
-                intent.putExtra(CropExtras.KEY_RETURN_DATA, true);
-            }
-            activity.startActivity(intent);
-            activity.finish();
-        } else {
-            Intent intent = new Intent(null, item.getContentUri())
+        Intent intent = new Intent(null, item.getContentUri())
                 .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
-            activity.setResult(Activity.RESULT_OK, intent);
-            activity.finish();
-        }
+        activity.setResult(Activity.RESULT_OK, intent);
+        activity.finish();
     }
 
     public void onLongTap(int slotIndex) {

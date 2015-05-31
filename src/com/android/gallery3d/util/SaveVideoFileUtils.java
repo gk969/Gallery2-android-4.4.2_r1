@@ -25,7 +25,6 @@ import android.os.Environment;
 import android.provider.MediaStore.Video;
 import android.provider.MediaStore.Video.VideoColumns;
 
-import com.android.gallery3d.filtershow.tools.SaveImage.ContentResolverQueryCallback;
 
 import java.io.File;
 import java.sql.Date;
@@ -54,33 +53,9 @@ public class SaveVideoFileUtils {
         return dstFileInfo;
     }
 
-    private static void querySource(ContentResolver contentResolver, Uri uri,
-            String[] projection, ContentResolverQueryCallback callback) {
-        Cursor cursor = null;
-        try {
-            cursor = contentResolver.query(uri, projection, null, null, null);
-            if ((cursor != null) && cursor.moveToNext()) {
-                callback.onCursorResult(cursor);
-            }
-        } catch (Exception e) {
-            // Ignore error for lacking the data column from the source.
-        } finally {
-            if (cursor != null) {
-                cursor.close();
-            }
-        }
-    }
-
     private static File getSaveDirectory(ContentResolver contentResolver, Uri uri) {
         final File[] dir = new File[1];
-        querySource(contentResolver, uri,
-                new String[] { VideoColumns.DATA },
-                new ContentResolverQueryCallback() {
-            @Override
-            public void onCursorResult(Cursor cursor) {
-                dir[0] = new File(cursor.getString(0)).getParentFile();
-            }
-        });
+
         return dir[0];
     }
 
@@ -110,29 +85,6 @@ public class SaveVideoFileUtils {
                 VideoColumns.LONGITUDE,
                 VideoColumns.RESOLUTION,
         };
-
-        // Copy some info from the source file.
-        querySource(contentResolver, uri, projection,
-                new ContentResolverQueryCallback() {
-                @Override
-                    public void onCursorResult(Cursor cursor) {
-                        long timeTaken = cursor.getLong(0);
-                        if (timeTaken > 0) {
-                            values.put(Video.Media.DATE_TAKEN, timeTaken);
-                        }
-                        double latitude = cursor.getDouble(1);
-                        double longitude = cursor.getDouble(2);
-                        // TODO: Change || to && after the default location
-                        // issue is
-                        // fixed.
-                        if ((latitude != 0f) || (longitude != 0f)) {
-                            values.put(Video.Media.LATITUDE, latitude);
-                            values.put(Video.Media.LONGITUDE, longitude);
-                        }
-                        values.put(Video.Media.RESOLUTION, cursor.getString(3));
-
-                    }
-                });
 
         return contentResolver.insert(Video.Media.EXTERNAL_CONTENT_URI, values);
     }

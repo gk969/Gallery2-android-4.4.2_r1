@@ -35,8 +35,6 @@ import com.android.gallery3d.data.DataManager;
 import com.android.gallery3d.data.LocalAlbum;
 import com.android.gallery3d.data.MediaSet;
 import com.android.gallery3d.data.Path;
-import com.android.gallery3d.filtershow.crop.CropActivity;
-import com.android.gallery3d.filtershow.crop.CropExtras;
 
 public class WidgetConfigure extends Activity {
     @SuppressWarnings("unused")
@@ -135,29 +133,7 @@ public class WidgetConfigure extends Activity {
     }
 
     private void setChoosenPhoto(Intent data) {
-        Resources res = getResources();
-
-        float width = res.getDimension(R.dimen.appwidget_width);
-        float height = res.getDimension(R.dimen.appwidget_height);
-
-        // We try to crop a larger image (by scale factor), but there is still
-        // a bound on the binder limit.
-        float scale = Math.min(WIDGET_SCALE_FACTOR,
-                MAX_WIDGET_SIDE / Math.max(width, height));
-
-        int widgetWidth = Math.round(width * scale);
-        int widgetHeight = Math.round(height * scale);
-
-        mPickedItem = data.getData();
-        Intent request = new Intent(CropActivity.CROP_ACTION, mPickedItem)
-                .putExtra(CropExtras.KEY_OUTPUT_X, widgetWidth)
-                .putExtra(CropExtras.KEY_OUTPUT_Y, widgetHeight)
-                .putExtra(CropExtras.KEY_ASPECT_X, widgetWidth)
-                .putExtra(CropExtras.KEY_ASPECT_Y, widgetHeight)
-                .putExtra(CropExtras.KEY_SCALE_UP_IF_NEEDED, true)
-                .putExtra(CropExtras.KEY_SCALE, true)
-                .putExtra(CropExtras.KEY_RETURN_DATA, true);
-        startActivityForResult(request, REQUEST_CROP_IMAGE);
+    	
     }
 
     private void setChoosenAlbum(Intent data) {
