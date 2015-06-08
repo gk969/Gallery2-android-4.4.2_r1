@@ -6,6 +6,7 @@ Android原版Gallery2-android-4.4.2_r1源码地址：
 https://android.googlesource.com/platform/packages/apps/Gallery2/+/android-4.4.2_r1
 
 下载下来直接编译会报很多错，原因是有些库和源码需要添加到编译路径中，默认是不添加的。下面是编译运行都正常时的工程配置：
+
 ![Renderings](https://raw.githubusercontent.com/sj969/Gallery2-android-4.4.2_r1/master/project-config/project-struct.png)
 ![Renderings](https://raw.githubusercontent.com/sj969/Gallery2-android-4.4.2_r1/master/project-config/source-folders.png)
 ![Renderings](https://raw.githubusercontent.com/sj969/Gallery2-android-4.4.2_r1/master/project-config/build-path.png)
