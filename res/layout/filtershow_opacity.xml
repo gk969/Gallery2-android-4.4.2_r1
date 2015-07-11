@@ -22,7 +22,7 @@
     android:orientation="vertical"
     android:visibility="visible" >
 
-    <com.android.gallery3d.filtershow.colorpicker.ColorOpacityView
+    <com.UltimateImgSpider.filtershow.colorpicker.ColorOpacityView
             android:id="@+id/opacityView"
             android:layout_width="match_parent"
             android:layout_height="90dp"

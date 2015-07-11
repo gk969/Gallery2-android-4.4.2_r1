@@ -110,7 +110,7 @@
                     android:id="@+id/textView"
                     android:visibility="gone"/>
 
-            <com.android.gallery3d.filtershow.colorpicker.ColorCompareView
+            <com.UltimateImgSpider.filtershow.colorpicker.ColorCompareView
                     android:id="@+id/btnSelect"
                     android:layout_width="match_parent"
                     android:layout_height="32dp"
@@ -120,7 +120,7 @@
                     android:layout_marginBottom="0dp"
                     />
 
-            <com.android.gallery3d.filtershow.colorpicker.ColorSVRectView
+            <com.UltimateImgSpider.filtershow.colorpicker.ColorSVRectView
                     android:id="@+id/colorRectView"
                     android:layout_width="@dimen/draw_ui_width"
                     android:layout_height="@dimen/draw_ui_width"
@@ -128,13 +128,13 @@
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="1dp"/>
 
-            <com.android.gallery3d.filtershow.colorpicker.ColorHueView
+            <com.UltimateImgSpider.filtershow.colorpicker.ColorHueView
                     android:id="@+id/ColorHueView"
                     android:layout_width="match_parent"
                     android:layout_marginTop="0dp"
                     android:layout_height="32dp" />
 
-            <com.android.gallery3d.filtershow.colorpicker.ColorOpacityView
+            <com.UltimateImgSpider.filtershow.colorpicker.ColorOpacityView
                     android:id="@+id/colorOpacityView"
                     android:layout_width="match_parent"
                     android:layout_marginTop="24dp"

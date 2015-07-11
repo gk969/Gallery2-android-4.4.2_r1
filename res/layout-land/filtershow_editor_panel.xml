@@ -78,7 +78,7 @@
                     android:orientation="horizontal"
                     android:visibility="visible">
 
-                <com.android.gallery3d.filtershow.editors.SwapButton
+                <com.UltimateImgSpider.filtershow.editors.SwapButton
                         android:id="@+id/applyEffect"
                         android:layout_width="fill_parent"
                         android:layout_height="fill_parent"

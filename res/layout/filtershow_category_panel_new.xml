@@ -16,7 +16,7 @@
 -->
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:custom="http://schemas.android.com/apk/res/com.android.gallery3d"
+              xmlns:custom="http://schemas.android.com/apk/res/com.UltimateImgSpider"
               android:orientation="horizontal"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
             android:layout_weight="1"
             android:scrollbars="none" >
 
-        <com.android.gallery3d.filtershow.category.CategoryTrack
+        <com.UltimateImgSpider.filtershow.category.CategoryTrack
                 android:id="@+id/listItems"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/category_panel_height"
@@ -39,7 +39,7 @@
 
     </HorizontalScrollView>
 
-    <com.android.gallery3d.filtershow.category.IconView
+    <com.UltimateImgSpider.filtershow.category.IconView
             android:id="@+id/addButton"
             android:layout_width="@dimen/category_panel_height"
             android:layout_height="@dimen/category_panel_height"

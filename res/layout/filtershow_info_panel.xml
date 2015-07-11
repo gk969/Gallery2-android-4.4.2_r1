@@ -79,7 +79,7 @@
 
                         />
 
-                <com.android.gallery3d.filtershow.info.HistogramView
+                <com.UltimateImgSpider.filtershow.info.HistogramView
                         android:id="@+id/histogramView"
                         android:layout_weight="0.7"
                         android:layout_width="0dp"

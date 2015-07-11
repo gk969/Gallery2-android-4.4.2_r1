@@ -22,7 +22,7 @@
     android:orientation="vertical"
     android:visibility="visible" >
 
-    <com.android.gallery3d.filtershow.colorpicker.ColorHueView
+    <com.UltimateImgSpider.filtershow.colorpicker.ColorHueView
             android:id="@+id/hueView"
             android:layout_width="match_parent"
             android:layout_height="90dp"

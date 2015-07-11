@@ -61,7 +61,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"/>
 
-                <com.android.gallery3d.filtershow.imageshow.ImageShow
+                <com.UltimateImgSpider.filtershow.imageshow.ImageShow
                         android:id="@+id/imageShow"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -72,8 +72,8 @@
 
         </FrameLayout>
 
-        <com.android.gallery3d.filtershow.CenteredLinearLayout
-                xmlns:custom="http://schemas.android.com/apk/res/com.android.gallery3d"
+        <com.UltimateImgSpider.filtershow.CenteredLinearLayout
+                xmlns:custom="http://schemas.android.com/apk/res/com.UltimateImgSpider"
                 android:id="@+id/mainPanel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -87,11 +87,11 @@
                          android:layout_height="0dip"
                          android:layout_weight="1" />
 
-        </com.android.gallery3d.filtershow.CenteredLinearLayout>
+        </com.UltimateImgSpider.filtershow.CenteredLinearLayout>
 
     </LinearLayout>
 
-    <com.android.gallery3d.filtershow.category.CategorySelected
+    <com.UltimateImgSpider.filtershow.category.CategorySelected
             android:layout_width="@dimen/category_panel_icon_size"
             android:layout_height="@dimen/category_panel_icon_size"
             android:id="@+id/categorySelectedIndicator"

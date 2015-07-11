@@ -16,13 +16,13 @@
 -->
 
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:iconbutton="http://schemas.android.com/apk/res/com.android.gallery3d"
+    xmlns:iconbutton="http://schemas.android.com/apk/res/com.UltimateImgSpider"
     android:id="@+id/tinyPlanetEditor"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_weight="1" >
 
-    <com.android.gallery3d.filtershow.imageshow.ImageTinyPlanet
+    <com.UltimateImgSpider.filtershow.imageshow.ImageTinyPlanet
         android:id="@+id/imageTinyPlanet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />

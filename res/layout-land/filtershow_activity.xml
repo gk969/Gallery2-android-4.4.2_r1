@@ -70,7 +70,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="1"/>
 
-                    <com.android.gallery3d.filtershow.imageshow.ImageShow
+                    <com.UltimateImgSpider.filtershow.imageshow.ImageShow
                             android:id="@+id/imageShow"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -105,7 +105,7 @@
 
     </LinearLayout>
 
-    <com.android.gallery3d.filtershow.category.CategorySelected
+    <com.UltimateImgSpider.filtershow.category.CategorySelected
             android:layout_width="@dimen/category_panel_icon_size"
             android:layout_height="@dimen/category_panel_icon_size"
             android:id="@+id/categorySelectedIndicator"

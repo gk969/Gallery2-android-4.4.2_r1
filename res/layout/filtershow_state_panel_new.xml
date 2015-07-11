@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-              xmlns:custom="http://schemas.android.com/apk/res/com.android.gallery3d"
+              xmlns:custom="http://schemas.android.com/apk/res/com.UltimateImgSpider"
               android:orientation="vertical"
               android:layout_width="match_parent"
               android:layout_height="wrap_content"
@@ -22,7 +22,7 @@
             android:layout_weight="1"
             android:scrollbars="none">
 
-        <com.android.gallery3d.filtershow.state.StatePanelTrack
+        <com.UltimateImgSpider.filtershow.state.StatePanelTrack
                 android:id="@+id/listStates"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"

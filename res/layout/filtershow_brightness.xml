@@ -22,7 +22,7 @@
     android:orientation="vertical"
     android:visibility="visible" >
 
-    <com.android.gallery3d.filtershow.colorpicker.ColorBrightnessView
+    <com.UltimateImgSpider.filtershow.colorpicker.ColorBrightnessView
             android:id="@+id/brightnessView"
             android:layout_width="match_parent"
             android:layout_height="90dp"
