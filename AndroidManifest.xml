@@ -246,17 +246,6 @@
                 android:theme="@style/Theme.Gallery"
                 android:configChanges="orientation|keyboardHidden|screenSize" />
 
-        <provider android:name="com.UltimateImgSpider.provider.GalleryProvider"
-                android:syncable="false"
-                android:grantUriPermissions="true"
-                android:exported="true"
-                android:permission="com.UltimateImgSpider.permission.GALLERY_PROVIDER"
-                android:authorities="com.UltimateImgSpider.provider" />
-        <provider
-                android:name="com.android.photos.data.PhotoProvider"
-                android:authorities="com.UltimateImgSpider.photoprovider"
-                android:syncable="false"
-                android:exported="false"/>
         <activity android:name="com.UltimateImgSpider.gadget.WidgetClickHandler" />
         <activity android:name="com.UltimateImgSpider.app.DialogPicker"
                 android:configChanges="keyboardHidden|orientation|screenSize"
@@ -268,22 +257,6 @@
                 android:configChanges="keyboardHidden|orientation|screenSize"
                 android:theme="@style/Theme.Gallery.Dialog"/>
 
-        <receiver android:name="com.UltimateImgSpider.gadget.PhotoAppWidgetProvider"
-                android:label="@string/appwidget_title">
-            <intent-filter>
-                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
-            </intent-filter>
-            <meta-data android:name="android.appwidget.provider"
-                    android:resource="@xml/widget_info" />
-        </receiver>
-        <receiver android:name="com.UltimateImgSpider.app.PackagesMonitor">
-            <intent-filter>
-                <action android:name="android.intent.action.PACKAGE_ADDED"/>
-                <action android:name="android.intent.action.PACKAGE_REMOVED"/>
-                <action android:name="android.intent.action.PACKAGE_CHANGED"/>
-                <data android:scheme="package"/>
-            </intent-filter>
-        </receiver>
         <service android:name="com.UltimateImgSpider.app.PackagesMonitor$AsyncService"/>
         <service android:name="com.UltimateImgSpider.gadget.WidgetService"
                 android:permission="android.permission.BIND_REMOTEVIEWS"/>
@@ -296,11 +269,6 @@
         </activity>
         <service android:name="com.UltimateImgSpider.app.BatchService" />
 
-        <receiver android:name="com.android.camera.DisableCameraReceiver">
-            <intent-filter>
-                <action android:name="android.intent.action.BOOT_COMPLETED" />
-            </intent-filter>
-        </receiver>
 
         <service android:name="com.android.camera.MediaSaveService" />
     </application>
