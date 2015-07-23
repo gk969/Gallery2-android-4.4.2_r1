@@ -45,7 +45,4 @@
         android:id="@+id/render_overlay"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-    <include layout="@layout/camera_controls"
-        android:layout_gravity="center"
-        style="@style/CameraControls"/>
 </merge>

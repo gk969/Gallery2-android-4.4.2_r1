@@ -53,8 +53,4 @@
             android:src="@drawable/ic_gallery_play_big"
             android:visibility="gone"
             android:onClick="onReviewPlayClicked"/>
-
-    <include layout="@layout/camera_controls"
-        android:layout_gravity="center"
-        style="@style/CameraControls"/>
 </merge>
