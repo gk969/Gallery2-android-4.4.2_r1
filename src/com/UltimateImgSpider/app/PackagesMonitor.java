@@ -23,7 +23,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 
-import com.UltimateImgSpider.picasasource.PicasaSource;
 import com.UltimateImgSpider.util.LightCycleHelper;
 
 public class PackagesMonitor extends BroadcastReceiver {
@@ -60,12 +59,5 @@ public class PackagesMonitor extends BroadcastReceiver {
 
         String action = intent.getAction();
         String packageName = intent.getData().getSchemeSpecificPart();
-        if (Intent.ACTION_PACKAGE_ADDED.equals(action)) {
-            PicasaSource.onPackageAdded(context, packageName);
-        } else if (Intent.ACTION_PACKAGE_REMOVED.equals(action)) {
-            PicasaSource.onPackageRemoved(context, packageName);
-        } else if (Intent.ACTION_PACKAGE_CHANGED.equals(action)) {
-            PicasaSource.onPackageChanged(context, packageName);
-        }
     }
 }

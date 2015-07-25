@@ -537,10 +537,6 @@ public class AlbumPage extends ActivityState implements GalleryActionBar.Cluster
             FilterUtils.setupMenuItems(actionBar, mMediaSetPath, true);
 
             menu.findItem(R.id.action_group_by).setVisible(mShowClusterMenu);
-            menu.findItem(R.id.action_camera).setVisible(
-                    MediaSetUtils.isCameraSource(mMediaSetPath)
-                    && GalleryUtils.isCameraAvailable(mActivity));
-
         }
         actionBar.setSubtitle(null);
         return true;
@@ -597,10 +593,6 @@ public class AlbumPage extends ActivityState implements GalleryActionBar.Cluster
                 } else {
                     showDetails();
                 }
-                return true;
-            }
-            case R.id.action_camera: {
-                GalleryUtils.startCameraActivity(mActivity);
                 return true;
             }
             default:

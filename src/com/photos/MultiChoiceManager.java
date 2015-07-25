@@ -129,7 +129,6 @@ public class MultiChoiceManager implements MultiChoiceModeListener,
     }
 
     private void updateActionItemVisibilities(Menu menu, int supportedOperations) {
-        MenuItem editItem = menu.findItem(R.id.menu_edit);
         MenuItem deleteItem = menu.findItem(R.id.menu_delete);
         MenuItem shareItem = menu.findItem(R.id.menu_share);
         MenuItem cropItem = menu.findItem(R.id.menu_crop);
@@ -137,7 +136,6 @@ public class MultiChoiceManager implements MultiChoiceModeListener,
         MenuItem muteItem = menu.findItem(R.id.menu_mute);
         MenuItem setAsItem = menu.findItem(R.id.menu_set_as);
 
-        editItem.setVisible((supportedOperations & MediaObject.SUPPORT_EDIT) > 0);
         deleteItem.setVisible((supportedOperations & MediaObject.SUPPORT_DELETE) > 0);
         shareItem.setVisible((supportedOperations & MediaObject.SUPPORT_SHARE) > 0);
         cropItem.setVisible((supportedOperations & MediaObject.SUPPORT_CROP) > 0);
@@ -211,7 +209,6 @@ public class MultiChoiceManager implements MultiChoiceModeListener,
                 deleteTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
                 mode.finish();
                 return true;
-            case R.id.menu_edit:
             case R.id.menu_crop:
             case R.id.menu_trim:
             case R.id.menu_mute:
@@ -229,12 +226,6 @@ public class MultiChoiceManager implements MultiChoiceModeListener,
         String mime = getItemMimetype(item);
         Uri uri = mDelegate.getItemUri(item);
         switch (actionItemId) {
-            case R.id.menu_edit:
-                intent.setDataAndType(uri, mime)
-                      .setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)
-                      .setAction(Intent.ACTION_EDIT);
-                mContext.startActivity(Intent.createChooser(intent, null));
-                return;
             case R.id.menu_crop:
                 
                 return;

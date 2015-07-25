@@ -58,7 +58,6 @@ import com.UltimateImgSpider.data.SecureSource;
 import com.UltimateImgSpider.data.SnailAlbum;
 import com.UltimateImgSpider.data.SnailItem;
 import com.UltimateImgSpider.data.SnailSource;
-import com.UltimateImgSpider.picasasource.PicasaSource;
 import com.UltimateImgSpider.ui.DetailsHelper;
 import com.UltimateImgSpider.ui.DetailsHelper.CloseListener;
 import com.UltimateImgSpider.ui.DetailsHelper.DetailsSource;
@@ -95,10 +94,8 @@ public abstract class PhotoPage extends ActivityState implements
 
     private static final int REQUEST_SLIDESHOW = 1;
     private static final int REQUEST_CROP = 2;
-    private static final int REQUEST_CROP_PICASA = 3;
-    private static final int REQUEST_EDIT = 4;
-    private static final int REQUEST_PLAY_VIDEO = 5;
-    private static final int REQUEST_TRIM = 6;
+    private static final int REQUEST_PLAY_VIDEO = 3;
+    private static final int REQUEST_TRIM = 4;
 
     public static final String KEY_MEDIA_SET_PATH = "media-set-path";
     public static final String KEY_MEDIA_ITEM_PATH = "media-item-path";
@@ -142,7 +139,6 @@ public abstract class PhotoPage extends ActivityState implements
     private volatile boolean mActionBarAllowed = true;
     private GalleryActionBar mActionBar;
     private boolean mIsMenuVisible;
-    private boolean mHaveImageEditor;
     private PhotoPageBottomControls mBottomControls;
     private MediaItem mCurrentPhoto = null;
     private MenuExecutor mMenuExecutor;
@@ -585,8 +581,7 @@ public abstract class PhotoPage extends ActivityState implements
             case R.id.photopage_bottom_control_panorama:
                 return mIsPanorama;
             case R.id.photopage_bottom_control_tiny_planet:
-                return mHaveImageEditor && mShowBars
-                        && mIsPanorama360 && !mPhotoView.getFilmMode();
+                return false;
             default:
                 return false;
         }
@@ -657,14 +652,6 @@ public abstract class PhotoPage extends ActivityState implements
         GalleryUtils.startCameraActivity(mActivity);
     }
 
-    private void launchPhotoEditor() {
-        
-    }
-
-    private void launchSimpleEditor() {
-        
-    }
-
     private void requestDeferredUpdate() {
         mDeferUpdateUntil = SystemClock.uptimeMillis() + DEFERRED_UPDATE_MS;
         if (!mDeferredUpdateWaiting) {
@@ -725,9 +712,7 @@ public abstract class PhotoPage extends ActivityState implements
             supportedOperations &= MediaObject.SUPPORT_DELETE;
         } else {
             mCurrentPhoto.getPanoramaSupport(mUpdatePanoramaMenuItemsCallback);
-            if (!mHaveImageEditor) {
-                supportedOperations &= ~MediaObject.SUPPORT_EDIT;
-            }
+            supportedOperations &= ~MediaObject.SUPPORT_EDIT;
         }
         MenuExecutor.updateMenuOperation(menu, supportedOperations);
     }
@@ -892,7 +877,6 @@ public abstract class PhotoPage extends ActivityState implements
     @Override
     protected boolean onCreateActionBar(Menu menu) {
         mActionBar.createActionBarMenu(R.menu.photo, menu);
-        mHaveImageEditor = GalleryUtils.isEditorAvailable(mActivity, "image/*");
         updateMenuOperations();
         mActionBar.setTitle(mMediaSet != null ? mMediaSet.getName() : "");
         return true;
@@ -1000,14 +984,6 @@ public abstract class PhotoPage extends ActivityState implements
                 MuteVideo muteVideo = new MuteVideo(current.getFilePath(),
                         manager.getContentUri(path), mActivity);
                 muteVideo.muteInBackground();
-                return true;
-            }
-            case R.id.action_edit: {
-                launchPhotoEditor();
-                return true;
-            }
-            case R.id.action_simple_edit: {
-                launchSimpleEditor();
                 return true;
             }
             case R.id.action_details: {
@@ -1198,23 +1174,11 @@ public abstract class PhotoPage extends ActivityState implements
         }
         mRecenterCameraOnResume = false;
         switch (requestCode) {
-            case REQUEST_EDIT:
-                setCurrentPhotoByIntent(data);
-                break;
             case REQUEST_CROP:
                 if (resultCode == Activity.RESULT_OK) {
                     setCurrentPhotoByIntent(data);
                 }
                 break;
-            case REQUEST_CROP_PICASA: {
-                if (resultCode == Activity.RESULT_OK) {
-                    Context context = mActivity.getAndroidContext();
-                    String message = context.getString(R.string.crop_saved,
-                            context.getString(R.string.folder_edited_online_photos));
-                    Toast.makeText(context, message, Toast.LENGTH_SHORT).show();
-                }
-                break;
-            }
             case REQUEST_SLIDESHOW: {
                 if (data == null) break;
                 String path = data.getStringExtra(SlideshowPage.KEY_ITEM_PATH);
@@ -1344,12 +1308,6 @@ public abstract class PhotoPage extends ActivityState implements
             mActionBar.hide();
             mActivity.getGLRoot().setLightsOutMode(true);
         }
-        boolean haveImageEditor = GalleryUtils.isEditorAvailable(mActivity, "image/*");
-        if (haveImageEditor != mHaveImageEditor) {
-            mHaveImageEditor = haveImageEditor;
-            updateMenuOperations();
-        }
-
         mRecenterCameraOnResume = true;
         mHandler.sendEmptyMessageDelayed(MSG_UNFREEZE_GLROOT, UNFREEZE_GLROOT_TIMEOUT);
     }

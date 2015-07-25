@@ -35,7 +35,6 @@ import com.UltimateImgSpider.data.DataManager;
 import com.UltimateImgSpider.data.MediaItem;
 import com.UltimateImgSpider.data.MediaObject;
 import com.UltimateImgSpider.data.Path;
-import com.UltimateImgSpider.picasasource.PicasaSource;
 import com.UltimateImgSpider.util.GalleryUtils;
 
 import java.io.FileNotFoundException;
@@ -46,22 +45,6 @@ public class GalleryProvider extends ContentProvider {
 
     public static final String AUTHORITY = "com.UltimateImgSpider.provider";
     public static final Uri BASE_URI = Uri.parse("content://" + AUTHORITY);
-
-    public static interface PicasaColumns {
-        public static final String USER_ACCOUNT = "user_account";
-        public static final String PICASA_ID = "picasa_id";
-    }
-
-    private static final String[] SUPPORTED_PICASA_COLUMNS = {
-            PicasaColumns.USER_ACCOUNT,
-            PicasaColumns.PICASA_ID,
-            ImageColumns.DISPLAY_NAME,
-            ImageColumns.SIZE,
-            ImageColumns.MIME_TYPE,
-            ImageColumns.DATE_TAKEN,
-            ImageColumns.LATITUDE,
-            ImageColumns.LONGITUDE,
-            ImageColumns.ORIENTATION};
 
     private DataManager mDataManager;
     private static Uri sBaseUri;
@@ -121,52 +104,11 @@ public class GalleryProvider extends ContentProvider {
                 Log.w(TAG, "cannot find: " + uri);
                 return null;
             }
-            if (PicasaSource.isPicasaImage(object)) {
-                return queryPicasaItem(object,
-                        projection, selection, selectionArgs, sortOrder);
-            } else {
-                    return null;
-            }
+            
+            return null;
         } finally {
             Binder.restoreCallingIdentity(token);
         }
-    }
-
-    private Cursor queryPicasaItem(MediaObject image, String[] projection,
-            String selection, String[] selectionArgs, String sortOrder) {
-        if (projection == null) projection = SUPPORTED_PICASA_COLUMNS;
-        Object[] columnValues = new Object[projection.length];
-        double latitude = PicasaSource.getLatitude(image);
-        double longitude = PicasaSource.getLongitude(image);
-        boolean isValidLatlong = GalleryUtils.isValidLocation(latitude, longitude);
-
-        for (int i = 0, n = projection.length; i < n; ++i) {
-            String column = projection[i];
-            if (PicasaColumns.USER_ACCOUNT.equals(column)) {
-                columnValues[i] = PicasaSource.getUserAccount(getContext(), image);
-            } else if (PicasaColumns.PICASA_ID.equals(column)) {
-                columnValues[i] = PicasaSource.getPicasaId(image);
-            } else if (ImageColumns.DISPLAY_NAME.equals(column)) {
-                columnValues[i] = PicasaSource.getImageTitle(image);
-            } else if (ImageColumns.SIZE.equals(column)){
-                columnValues[i] = PicasaSource.getImageSize(image);
-            } else if (ImageColumns.MIME_TYPE.equals(column)) {
-                columnValues[i] = PicasaSource.getContentType(image);
-            } else if (ImageColumns.DATE_TAKEN.equals(column)) {
-                columnValues[i] = PicasaSource.getDateTaken(image);
-            } else if (ImageColumns.LATITUDE.equals(column)) {
-                columnValues[i] = isValidLatlong ? latitude : null;
-            } else if (ImageColumns.LONGITUDE.equals(column)) {
-                columnValues[i] = isValidLatlong ? longitude : null;
-            } else if (ImageColumns.ORIENTATION.equals(column)) {
-                columnValues[i] = PicasaSource.getRotation(image);
-            } else {
-                Log.w(TAG, "unsupported column: " + column);
-            }
-        }
-        MatrixCursor cursor = new MatrixCursor(projection);
-        cursor.addRow(columnValues);
-        return cursor;
     }
 
     @Override
@@ -182,11 +124,8 @@ public class GalleryProvider extends ContentProvider {
             if (object == null) {
                 throw new FileNotFoundException(uri.toString());
             }
-            if (PicasaSource.isPicasaImage(object)) {
-                return PicasaSource.openFile(getContext(), object, mode);
-            } else {
-                throw new FileNotFoundException("unspported type: " + object);
-            }
+            
+            throw new FileNotFoundException("unspported type: " + object);
         } finally {
             Binder.restoreCallingIdentity(token);
         }

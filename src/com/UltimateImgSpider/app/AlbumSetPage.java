@@ -43,8 +43,6 @@ import com.UltimateImgSpider.data.MediaSet;
 import com.UltimateImgSpider.data.Path;
 import com.UltimateImgSpider.glrenderer.FadeTexture;
 import com.UltimateImgSpider.glrenderer.GLCanvas;
-import com.UltimateImgSpider.picasasource.PicasaSource;
-import com.UltimateImgSpider.settings.GallerySettings;
 import com.UltimateImgSpider.ui.ActionModeHandler;
 import com.UltimateImgSpider.ui.ActionModeHandler.ActionModeListener;
 import com.UltimateImgSpider.ui.AlbumSetSlotRenderer;
@@ -546,9 +544,6 @@ public class AlbumSetPage extends ActivityState implements
             selectItem.setTitle(activity.getString(
                     selectAlbums ? R.string.select_album : R.string.select_group));
 
-            MenuItem cameraItem = menu.findItem(R.id.action_camera);
-            cameraItem.setVisible(GalleryUtils.isCameraAvailable(activity));
-
             FilterUtils.setupMenuItems(mActionBar, mMediaSet.getPath(), false);
 
             Intent helpIntent = HelpUtils.getHelpIntent(activity);
@@ -595,24 +590,12 @@ public class AlbumSetPage extends ActivityState implements
                             Toast.LENGTH_SHORT).show();
                 }
                 return true;
-            case R.id.action_camera: {
-                GalleryUtils.startCameraActivity(activity);
-                return true;
-            }
             case R.id.action_manage_offline: {
                 Bundle data = new Bundle();
                 String mediaPath = mActivity.getDataManager().getTopSetPath(
                     DataManager.INCLUDE_ALL);
                 data.putString(AlbumSetPage.KEY_MEDIA_PATH, mediaPath);
                 mActivity.getStateManager().startState(ManageCachePage.class, data);
-                return true;
-            }
-            case R.id.action_sync_picasa_albums: {
-                PicasaSource.requestSync(activity);
-                return true;
-            }
-            case R.id.action_settings: {
-                activity.startActivity(new Intent(activity, GallerySettings.class));
                 return true;
             }
             default:

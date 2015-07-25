@@ -24,7 +24,6 @@ import com.UltimateImgSpider.data.DataManager;
 import com.UltimateImgSpider.data.DownloadCache;
 import com.UltimateImgSpider.data.ImageCacheService;
 import com.UltimateImgSpider.gadget.WidgetUtils;
-import com.UltimateImgSpider.picasasource.PicasaSource;
 import com.UltimateImgSpider.util.GalleryUtils;
 import com.UltimateImgSpider.util.LightCycleHelper;
 import com.UltimateImgSpider.util.ThreadPool;
@@ -49,7 +48,6 @@ public class GalleryAppImpl extends Application implements GalleryApp {
         initializeAsyncTask();
         GalleryUtils.initialize(this);
         WidgetUtils.initialize(this);
-        PicasaSource.initialize(this);
         UsageStatistics.initialize(this);
     }
 

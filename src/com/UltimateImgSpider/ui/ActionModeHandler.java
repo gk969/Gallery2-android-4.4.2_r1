@@ -293,17 +293,8 @@ public class ActionModeHandler implements Callback, PopupList.OnPopupItemClickLi
             operation &= support;
         }
 
-        switch (selected.size()) {
-            case 1:
-                final String mimeType = MenuExecutor.getMimeType(type);
-                if (!GalleryUtils.isEditorAvailable(mActivity, mimeType)) {
-                    operation &= ~MediaObject.SUPPORT_EDIT;
-                }
-                break;
-            default:
-                operation &= SUPPORT_MULTIPLE_MASK;
-        }
-
+        operation &= ~MediaObject.SUPPORT_EDIT;
+        
         return operation;
     }
 

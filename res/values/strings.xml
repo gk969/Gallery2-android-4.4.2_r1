@@ -134,9 +134,6 @@
     <string name="details_title">%1$d of %2$d items:</string>
     <string name="close">Close</string>
 
-    <!-- Title of a menu item to switch from Gallery to Camera app [CHAR LIMIT=30] -->
-    <string name="switch_to_camera">Switch to Camera</string>
-
     <!-- String indicating how many media item(s) is(are) selected
             eg. 1 selected [CHAR LIMIT=30] -->
     <plurals name="number_of_items_selected">
@@ -169,13 +166,6 @@
     <!-- Toast message prompted when the specified item is not found [CHAR LIMIT=40]-->
     <string name="no_such_item">Couldn\'t find item.</string>
 
-    <!-- String used as a menu label. The user can choose to edit the image
-         [CHAR_LIMIT=20]-->
-    <string name="edit">Edit</string>
-
-    <!-- String used as a menu label. The user can choose to edit the image
-         [CHAR_LIMIT=20]-->
-    <string name="simple_edit">Simple Edit</string>
 
     <!-- String used as a title of a progress dialog. The user can
          choose to cache some Picasa picture albums on device, so it can
@@ -273,15 +263,9 @@
             [CHAR LIMIT=50] -->
     <string name="empty_album">O images/videos available.</string>
 
-    <!-- Album label used to indicate the collection of PWA Buzz/Post photos -->
-    <string name="picasa_posts">Posts</string>
-
     <!-- A label describing that the current screen is for the user to pick
          some albums to be viewable offline [CHAR LIMIT=30] -->
     <string name="make_available_offline">Make available offline</string>
-
-    <!-- A label of a menu item for user to sync the content [CHAR LIMIT=30] -->
-    <string name="sync_picasa_albums">Refresh</string>
 
     <!-- A label on a button. The user clicks this button after he has
          finished selection. [CHAR LIMIT=15] -->
@@ -390,10 +374,6 @@
          [CHAR LIMIT=20] -->
     <string name="set_label_mtp_devices">MTP devices</string>
 
-    <!-- A label shown on the action bar. It indicates that the user is
-         viewing Picasa albums [CHAR LIMIT=20] -->
-    <string name="set_label_picasa_albums">Picasa albums</string>
-
     <!-- Label indicating the amount on free space on the device. The parameter
          is a string representation of the amount of free space, eg. "20MB".
          [CHAR LIMIT=20]
@@ -468,9 +448,6 @@
 
     <!-- Group by menu item. [CHAR LIMIT=20] -->
     <string name="group_by">Group by</string>
-
-    <!-- The title of the menu item which enable the settings [CHAR LIMIT=20] -->
-    <string name="settings">Settings</string>
 
     <!-- The title of menu item where user can add a new account -->
     <string name="add_account">Add account</string>
@@ -933,8 +910,6 @@
     <string name="accessibility_increment">Increase %1$s</string>
     <!-- The check box in camera settings, such as store location. [CHAR LIMIT = NONE] -->
     <string name="accessibility_check_box">%1$s check box</string>
-    <!-- The button to switch to Camera mode. [CHAR LIMIT = NONE] -->
-    <string name="accessibility_switch_to_camera">Switch to photo</string>
     <!-- The button to switch to Video mode. [CHAR LIMIT = NONE] -->
     <string name="accessibility_switch_to_video">Switch to video</string>
     <!-- The button to switch to Panorama mode. [CHAR LIMIT = NONE] -->

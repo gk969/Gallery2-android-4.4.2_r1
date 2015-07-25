@@ -41,10 +41,6 @@
             android:title="@string/delete"
             android:visible="false"
             android:showAsAction="ifRoom" />
-    <item android:id="@+id/action_edit"
-            android:title="@string/edit"
-            android:showAsAction="never"
-            android:visible="false" />
     <item android:id="@+id/action_rotate_ccw"
             android:showAsAction="never"
             android:visible="false"

@@ -36,7 +36,6 @@ import com.UltimateImgSpider.data.DataManager;
 import com.UltimateImgSpider.data.MediaItem;
 import com.UltimateImgSpider.data.MediaSet;
 import com.UltimateImgSpider.data.Path;
-import com.UltimateImgSpider.picasasource.PicasaSource;
 import com.UltimateImgSpider.util.GalleryUtils;
 
 public final class GalleryActivity extends AbstractGalleryActivity implements OnCancelListener {
@@ -100,15 +99,10 @@ public final class GalleryActivity extends AbstractGalleryActivity implements On
     }
 
     public void startDefaultPage() {
-        PicasaSource.showSignInReminder(this);
         Bundle data = new Bundle();
         data.putString(AlbumSetPage.KEY_MEDIA_PATH,
                 getDataManager().getTopSetPath(DataManager.INCLUDE_ALL));
         getStateManager().startState(AlbumSetPage.class, data);
-        mVersionCheckDialog = PicasaSource.getVersionCheckDialog(this);
-        if (mVersionCheckDialog != null) {
-            mVersionCheckDialog.setOnCancelListener(this);
-        }
     }
 
     private void startGetContent(Intent intent) {

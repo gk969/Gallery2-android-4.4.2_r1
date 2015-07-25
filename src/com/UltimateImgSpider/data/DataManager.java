@@ -27,7 +27,6 @@ import com.UltimateImgSpider.common.Utils;
 import com.UltimateImgSpider.data.MediaObject.PanoramaSupportCallback;
 import com.UltimateImgSpider.data.MediaSet.ItemConsumer;
 import com.UltimateImgSpider.data.MediaSource.PathId;
-import com.UltimateImgSpider.picasasource.PicasaSource;
 
 import java.util.ArrayList;
 import java.util.Comparator;
@@ -73,12 +72,12 @@ public class DataManager implements StitchingChangeListener {
     private static final String TAG = "DataManager";
 
     // This is the path for the media set seen by the user at top level.
-    private static final String TOP_SET_PATH = "/combo/{/local/all,/picasa/all}";
+    private static final String TOP_SET_PATH = "/combo/{/local/all}";
 
-    private static final String TOP_IMAGE_SET_PATH = "/combo/{/local/image,/picasa/image}";
+    private static final String TOP_IMAGE_SET_PATH = "/combo/{/local/image}";
 
     private static final String TOP_VIDEO_SET_PATH =
-            "/combo/{/local/video,/picasa/video}";
+            "/combo/{/local/video}";
 
     private static final String TOP_LOCAL_SET_PATH = "/local/all";
 
@@ -118,7 +117,6 @@ public class DataManager implements StitchingChangeListener {
 
         // the order matters, the UriSource must come last
         addSource(new LocalSource(mApplication));
-        addSource(new PicasaSource(mApplication));
         addSource(new ComboSource(mApplication));
         addSource(new ClusterSource(mApplication));
         addSource(new FilterSource(mApplication));

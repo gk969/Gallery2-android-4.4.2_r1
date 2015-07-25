@@ -57,10 +57,6 @@ public class ManageCacheDrawer extends AlbumSetSlotRenderer {
         mCachePinMargin = cachePinMargin;
     }
 
-    private static boolean isLocal(int dataSourceType) {
-        return dataSourceType != DataSourceType.TYPE_PICASA;
-    }
-
     @Override
     public int renderSlot(GLCanvas canvas, int index, int pass, int width, int height) {
         AlbumSetEntry entry = mDataWindow.get(index);
@@ -70,7 +66,7 @@ public class ManageCacheDrawer extends AlbumSetSlotRenderer {
                 entry.cacheStatus != MediaSet.CACHE_STATUS_CACHED_FULL);
         boolean selected = mSelectionManager.isItemSelected(entry.setPath);
         boolean chooseToCache = wantCache ^ selected;
-        boolean available = isLocal(entry.sourceType) || chooseToCache;
+        boolean available = true;
 
         int renderRequestFlags = 0;
 
@@ -93,13 +89,7 @@ public class ManageCacheDrawer extends AlbumSetSlotRenderer {
     private void drawCachingPin(GLCanvas canvas, Path path, int dataSourceType,
             boolean isCaching, boolean chooseToCache, int width, int height) {
         ResourceTexture icon;
-        if (isLocal(dataSourceType)) {
-            icon = mLocalAlbumIcon;
-        } else if (chooseToCache) {
-            icon = mCheckedItem;
-        } else {
-            icon = mUnCheckedItem;
-        }
+        icon = mLocalAlbumIcon;
 
         // show the icon in right bottom
         int s = mCachePinSize;

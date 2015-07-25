@@ -47,6 +47,7 @@
     <string name="select_group" msgid="6744208543323307114">"选择群组"</string>
     <string name="set_image" msgid="2331476809308010401">"将照片设置为"</string>
     <string name="set_wallpaper" msgid="8491121226190175017">"设置壁纸"</string>
+    <string name="print_image">打印照片</string>
     <string name="wallpaper" msgid="140165383777262070">"正在设置壁纸..."</string>
     <string name="camera_setas_wallpaper" msgid="797463183863414289">"壁纸"</string>
     <string name="delete" msgid="2839695998251824487">"删除"</string>
@@ -67,7 +68,6 @@
     <string name="details" msgid="8415120088556445230">"详细信息"</string>
     <string name="details_title" msgid="2611396603977441273">"第 %1$d 项（共 %2$d 项）："</string>
     <string name="close" msgid="5585646033158453043">"关闭"</string>
-    <string name="switch_to_camera" msgid="7280111806675169992">"切换到相机"</string>
   <plurals name="number_of_items_selected">
     <item quantity="zero" msgid="2142579311530586258">"选中了 %1$d 项"</item>
     <item quantity="one" msgid="2478365152745637768">"选中了 %1$d 项"</item>
@@ -87,8 +87,6 @@
     <string name="rotate_left" msgid="5888273317282539839">"向左旋转"</string>
     <string name="rotate_right" msgid="6776325835923384839">"向右旋转"</string>
     <string name="no_such_item" msgid="5315144556325243400">"找不到指定的项。"</string>
-    <string name="edit" msgid="1502273844748580847">"编辑"</string>
-    <string name="simple_edit" msgid="2792835918347498211">"简单编辑"</string>
     <string name="process_caching_requests" msgid="8722939570307386071">"正在处理缓存请求"</string>
     <string name="caching_label" msgid="4521059045896269095">"正在缓存..."</string>
     <string name="crop_action" msgid="3427470284074377001">"剪裁"</string>
@@ -115,9 +113,7 @@
     <string name="crop_saved" msgid="1595985909779105158">"经过裁剪的图片已保存至“<xliff:g id="FOLDER_NAME">%s</xliff:g>”。"</string>
     <string name="no_albums_alert" msgid="4111744447491690896">"没有可用的相册。"</string>
     <string name="empty_album" msgid="4542880442593595494">"没有图片/视频。"</string>
-    <string name="picasa_posts" msgid="1497721615718760613">"帖子"</string>
     <string name="make_available_offline" msgid="5157950985488297112">"允许离线查看"</string>
-    <string name="sync_picasa_albums" msgid="8522572542111169872">"刷新"</string>
     <string name="done" msgid="217672440064436595">"完成"</string>
     <string name="sequence_in_set" msgid="7235465319919457488">"第 %1$d 个项（共 %2$d 个）："</string>
     <string name="title" msgid="7622928349908052569">"标题"</string>
@@ -153,7 +149,6 @@
     <string name="set_label_all_albums" msgid="4581863582996336783">"所有相册"</string>
     <string name="set_label_local_albums" msgid="6698133661656266702">"本地相册"</string>
     <string name="set_label_mtp_devices" msgid="1283513183744896368">"MTP 设备"</string>
-    <string name="set_label_picasa_albums" msgid="5356258354953935895">"Picasa 相册"</string>
     <string name="free_space_format" msgid="8766337315709161215">"可用空间：<xliff:g id="BYTES">%s</xliff:g>"</string>
     <string name="size_below" msgid="2074956730721942260">"<xliff:g id="SIZE">%1$s</xliff:g> 或更小"</string>
     <string name="size_above" msgid="5324398253474104087">"<xliff:g id="SIZE">%1$s</xliff:g> 或更大"</string>
@@ -175,7 +170,6 @@
     <string name="people" msgid="4114003823747292747">"人物"</string>
     <string name="tags" msgid="5539648765482935955">"标签"</string>
     <string name="group_by" msgid="4308299657902209357">"分组依据"</string>
-    <string name="settings" msgid="1534847740615665736">"设置"</string>
     <string name="add_account" msgid="4271217504968243974">"添加帐户"</string>
     <string name="folder_camera" msgid="4714658994809533480">"相机"</string>
     <string name="folder_download" msgid="7186215137642323932">"下载"</string>

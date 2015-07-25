@@ -200,25 +200,6 @@ public class GalleryUtils {
         jc.setCancelListener(null);
     }
 
-    public static boolean isEditorAvailable(Context context, String mimeType) {
-        int version = PackagesMonitor.getPackagesVersion(context);
-
-        String updateKey = PREFIX_PHOTO_EDITOR_UPDATE + mimeType;
-        String hasKey = PREFIX_HAS_PHOTO_EDITOR + mimeType;
-
-        SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
-        if (prefs.getInt(updateKey, 0) != version) {
-            PackageManager packageManager = context.getPackageManager();
-            List<ResolveInfo> infos = packageManager.queryIntentActivities(
-                    new Intent(Intent.ACTION_EDIT).setType(mimeType), 0);
-            prefs.edit().putInt(updateKey, version)
-                        .putBoolean(hasKey, !infos.isEmpty())
-                        .commit();
-        }
-
-        return prefs.getBoolean(hasKey, true);
-    }
-
     public static boolean isAnyCameraAvailable(Context context) {
         int version = PackagesMonitor.getPackagesVersion(context);
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
