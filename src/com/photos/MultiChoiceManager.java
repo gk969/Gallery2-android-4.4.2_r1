@@ -131,14 +131,12 @@ public class MultiChoiceManager implements MultiChoiceModeListener,
     private void updateActionItemVisibilities(Menu menu, int supportedOperations) {
         MenuItem deleteItem = menu.findItem(R.id.menu_delete);
         MenuItem shareItem = menu.findItem(R.id.menu_share);
-        MenuItem cropItem = menu.findItem(R.id.menu_crop);
         MenuItem trimItem = menu.findItem(R.id.menu_trim);
         MenuItem muteItem = menu.findItem(R.id.menu_mute);
         MenuItem setAsItem = menu.findItem(R.id.menu_set_as);
 
         deleteItem.setVisible((supportedOperations & MediaObject.SUPPORT_DELETE) > 0);
         shareItem.setVisible((supportedOperations & MediaObject.SUPPORT_SHARE) > 0);
-        cropItem.setVisible((supportedOperations & MediaObject.SUPPORT_CROP) > 0);
         trimItem.setVisible((supportedOperations & MediaObject.SUPPORT_TRIM) > 0);
         muteItem.setVisible((supportedOperations & MediaObject.SUPPORT_MUTE) > 0);
         setAsItem.setVisible((supportedOperations & MediaObject.SUPPORT_SETAS) > 0);
@@ -209,7 +207,6 @@ public class MultiChoiceManager implements MultiChoiceModeListener,
                 deleteTask.executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
                 mode.finish();
                 return true;
-            case R.id.menu_crop:
             case R.id.menu_trim:
             case R.id.menu_mute:
             case R.id.menu_set_as:
@@ -226,9 +223,6 @@ public class MultiChoiceManager implements MultiChoiceModeListener,
         String mime = getItemMimetype(item);
         Uri uri = mDelegate.getItemUri(item);
         switch (actionItemId) {
-            case R.id.menu_crop:
-                
-                return;
             case R.id.menu_trim:
                 intent.setData(uri)
                       .setClass(mContext, TrimVideo.class);

@@ -49,10 +49,6 @@
             android:showAsAction="never"
             android:visible="false"
             android:title="@string/rotate_right" />
-    <item android:id="@+id/action_crop"
-            android:title="@string/crop_action"
-            android:showAsAction="never"
-            android:visible="false" />
     <item android:id="@+id/action_setas"
             android:title="@string/set_image"
             android:showAsAction="never"

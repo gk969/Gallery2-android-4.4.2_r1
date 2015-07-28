@@ -535,8 +535,6 @@ public class AlbumPage extends ActivityState implements GalleryActionBar.Cluster
             actionBar.setTitle(mMediaSet.getName());
 
             FilterUtils.setupMenuItems(actionBar, mMediaSetPath, true);
-
-            menu.findItem(R.id.action_group_by).setVisible(mShowClusterMenu);
         }
         actionBar.setSubtitle(null);
         return true;

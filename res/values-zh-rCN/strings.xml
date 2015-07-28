@@ -34,11 +34,6 @@
     <string name="resume_playing_restart" msgid="5471008499835769292">"重新开始"</string>
     <string name="crop_save_text" msgid="152200178986698300">"确定"</string>
     <string name="ok" msgid="5296833083983263293">"确定"</string>
-    <string name="multiface_crop_help" msgid="2554690102655855657">"触摸一张脸开始裁剪。"</string>
-    <string name="saving_image" msgid="7270334453636349407">"正在保存照片..."</string>
-    <string name="filtershow_saving_image" msgid="6659463980581993016">"正在将照片保存到“<xliff:g id="ALBUM_NAME">%1$s</xliff:g>”…"</string>
-    <string name="save_error" msgid="6857408774183654970">"无法保存经过裁剪的图片。"</string>
-    <string name="crop_label" msgid="521114301871349328">"剪裁照片"</string>
     <string name="trim_label" msgid="274203231381209979">"剪辑视频"</string>
     <string name="select_image" msgid="7841406150484742140">"选择照片"</string>
     <string name="select_video" msgid="4859510992798615076">"选择视频"</string>
@@ -47,7 +42,6 @@
     <string name="select_group" msgid="6744208543323307114">"选择群组"</string>
     <string name="set_image" msgid="2331476809308010401">"将照片设置为"</string>
     <string name="set_wallpaper" msgid="8491121226190175017">"设置壁纸"</string>
-    <string name="print_image">打印照片</string>
     <string name="wallpaper" msgid="140165383777262070">"正在设置壁纸..."</string>
     <string name="camera_setas_wallpaper" msgid="797463183863414289">"壁纸"</string>
     <string name="delete" msgid="2839695998251824487">"删除"</string>
@@ -89,7 +83,6 @@
     <string name="no_such_item" msgid="5315144556325243400">"找不到指定的项。"</string>
     <string name="process_caching_requests" msgid="8722939570307386071">"正在处理缓存请求"</string>
     <string name="caching_label" msgid="4521059045896269095">"正在缓存..."</string>
-    <string name="crop_action" msgid="3427470284074377001">"剪裁"</string>
     <string name="trim_action" msgid="703098114452883524">"修剪"</string>
     <string name="mute_action" msgid="5296241754753306251">"静音"</string>
     <string name="set_as" msgid="3636764710790507868">"设置为"</string>
@@ -110,7 +103,6 @@
     <string name="show_all" msgid="6963292714584735149">"图片和视频"</string>
     <string name="appwidget_title" msgid="6410561146863700411">"照片"</string>
     <string name="appwidget_empty_text" msgid="1228925628357366957">"没有照片。"</string>
-    <string name="crop_saved" msgid="1595985909779105158">"经过裁剪的图片已保存至“<xliff:g id="FOLDER_NAME">%s</xliff:g>”。"</string>
     <string name="no_albums_alert" msgid="4111744447491690896">"没有可用的相册。"</string>
     <string name="empty_album" msgid="4542880442593595494">"没有图片/视频。"</string>
     <string name="make_available_offline" msgid="5157950985488297112">"允许离线查看"</string>
@@ -169,7 +161,6 @@
     <string name="locations" msgid="6649297994083130305">"地点"</string>
     <string name="people" msgid="4114003823747292747">"人物"</string>
     <string name="tags" msgid="5539648765482935955">"标签"</string>
-    <string name="group_by" msgid="4308299657902209357">"分组依据"</string>
     <string name="add_account" msgid="4271217504968243974">"添加帐户"</string>
     <string name="folder_camera" msgid="4714658994809533480">"相机"</string>
     <string name="folder_download" msgid="7186215137642323932">"下载"</string>

@@ -182,7 +182,6 @@ public class MenuExecutor {
         setMenuItemVisible(menu, R.id.action_delete, supportDelete);
         setMenuItemVisible(menu, R.id.action_rotate_ccw, supportRotate);
         setMenuItemVisible(menu, R.id.action_rotate_cw, supportRotate);
-        setMenuItemVisible(menu, R.id.action_crop, supportCrop);
         setMenuItemVisible(menu, R.id.action_trim, supportTrim);
         setMenuItemVisible(menu, R.id.action_mute, supportMute);
         // Hide panorama until call to updateMenuForPanorama corrects it
@@ -192,7 +191,6 @@ public class MenuExecutor {
         setMenuItemVisible(menu, R.id.action_show_on_map, supportShowOnMap);
         // setMenuItemVisible(menu, R.id.action_simple_edit, supportEdit);
         setMenuItemVisible(menu, R.id.action_details, supportInfo);
-        setMenuItemVisible(menu, R.id.print, supportPrint);
     }
 
     public static void updateMenuForPanorama(Menu menu, boolean shareAsPanorama360,
@@ -237,10 +235,6 @@ public class MenuExecutor {
                     mSelectionManager.selectAll();
                 }
                 return;
-            case R.id.action_crop: {
-            	
-                return;
-            }
             case R.id.action_setas: {
                 Intent intent = getIntentBySingleSelectedPath(Intent.ACTION_ATTACH_DATA)
                         .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);

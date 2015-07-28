@@ -345,10 +345,4 @@ public class AbstractGalleryActivity extends Activity implements GalleryContext 
             throw new RuntimeException("Batch service unavailable");
         }
     }
-
-    public void printSelectedImage(Uri uri) {
-        if (uri == null) {
-            return;
-        }
-    }
 }
