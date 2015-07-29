@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <merge xmlns:android="http://schemas.android.com/apk/res/android">
-    <com.UltimateImgSpider.ingest.ui.IngestGridView
+    <com.gallery.gallery3d.ingest.ui.IngestGridView
         android:id="@+id/ingest_gridview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"

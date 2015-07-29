@@ -13,7 +13,7 @@
      See the License for the specific language governing permissions and
      limitations under the License.
 -->
-<com.UltimateImgSpider.ingest.ui.MtpFullscreenView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.gallery.gallery3d.ingest.ui.MtpFullscreenView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
@@ -26,7 +26,7 @@
         android:indeterminate="true"
         android:indeterminateOnly="true" />
 
-    <com.UltimateImgSpider.ingest.ui.MtpImageView
+    <com.gallery.gallery3d.ingest.ui.MtpImageView
         android:id="@+id/ingest_fullsize_image"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
@@ -40,4 +40,4 @@
         android:layout_alignParentRight="true"
         android:text="@string/Import" />
 
-</com.UltimateImgSpider.ingest.ui.MtpFullscreenView>
+</com.gallery.gallery3d.ingest.ui.MtpFullscreenView>

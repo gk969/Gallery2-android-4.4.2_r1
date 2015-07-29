@@ -15,7 +15,7 @@
 -->
 
 <PreferenceGroup
-        xmlns:camera="http://schemas.android.com/apk/res/com.UltimateImgSpider"
+        xmlns:camera="http://schemas.android.com/apk/res/com.gallery.gallery3d"
         camera:title="@string/pref_camcorder_settings_category">
     <ListPreference
             camera:key="pref_video_quality_key"
