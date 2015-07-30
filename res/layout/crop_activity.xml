@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1" >
 
-            <com.gallery.gallery3d.filtershow.crop.CropView
+            <com.gk969.gallery.gallery3d.filtershow.crop.CropView
                 android:id="@+id/cropView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
