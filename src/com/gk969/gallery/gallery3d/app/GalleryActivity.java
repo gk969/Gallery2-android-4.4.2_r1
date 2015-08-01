@@ -79,17 +79,6 @@ public final class GalleryActivity extends AbstractGalleryActivity implements On
 
         if (Intent.ACTION_GET_CONTENT.equalsIgnoreCase(action)) {
             startGetContent(intent);
-        } else if (Intent.ACTION_PICK.equalsIgnoreCase(action)) {
-            // We do NOT really support the PICK intent. Handle it as
-            // the GET_CONTENT. However, we need to translate the type
-            // in the intent here.
-            Log.w(TAG, "action PICK is not supported");
-            String type = Utils.ensureNotNull(intent.getType());
-            if (type.startsWith("vnd.android.cursor.dir/")) {
-                if (type.endsWith("/image")) intent.setType("image/*");
-                if (type.endsWith("/video")) intent.setType("video/*");
-            }
-            startGetContent(intent);
         } else if (Intent.ACTION_VIEW.equalsIgnoreCase(action)
                 || ACTION_REVIEW.equalsIgnoreCase(action)){
             startViewAction(intent);
