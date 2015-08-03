@@ -32,7 +32,6 @@ import android.widget.ShareActionProvider;
 import android.widget.ShareActionProvider.OnShareTargetSelectedListener;
 
 import com.gk969.UltimateImgSpider.R;
-import com.gk969.gallery.gallery3d.app.TrimVideo;
 import com.gk969.gallery.gallery3d.data.MediaObject;
 import com.gk969.gallery.gallery3d.util.GalleryUtils;
 
@@ -223,18 +222,6 @@ public class MultiChoiceManager implements MultiChoiceModeListener,
         String mime = getItemMimetype(item);
         Uri uri = mDelegate.getItemUri(item);
         switch (actionItemId) {
-            case R.id.menu_trim:
-                intent.setData(uri)
-                      .setClass(mContext, TrimVideo.class);
-                mContext.startActivity(intent);
-                return;
-            case R.id.menu_mute:
-                /* TODO need a way to get the file path of an item
-                MuteVideo muteVideo = new MuteVideo(filePath,
-                        uri, (Activity) mContext);
-                muteVideo.muteInBackground();
-                */
-                return;
             case R.id.menu_set_as:
                 intent.setDataAndType(uri, mime)
                       .setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION)

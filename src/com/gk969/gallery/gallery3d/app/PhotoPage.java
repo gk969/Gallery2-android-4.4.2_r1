@@ -972,20 +972,6 @@ public abstract class PhotoPage extends ActivityState implements
                         SlideshowPage.class, REQUEST_SLIDESHOW, data);
                 return true;
             }
-            case R.id.action_trim: {
-                Intent intent = new Intent(mActivity, TrimVideo.class);
-                intent.setData(manager.getContentUri(path));
-                // We need the file path to wrap this into a RandomAccessFile.
-                intent.putExtra(KEY_MEDIA_ITEM_PATH, current.getFilePath());
-                mActivity.startActivityForResult(intent, REQUEST_TRIM);
-                return true;
-            }
-            case R.id.action_mute: {
-                MuteVideo muteVideo = new MuteVideo(current.getFilePath(),
-                        manager.getContentUri(path), mActivity);
-                muteVideo.muteInBackground();
-                return true;
-            }
             case R.id.action_details: {
                 if (mShowDetails) {
                     hideDetails();
@@ -1045,27 +1031,11 @@ public abstract class PhotoPage extends ActivityState implements
         }
 
         int supported = item.getSupportedOperations();
-        boolean playVideo = ((supported & MediaItem.SUPPORT_PLAY) != 0);
         boolean unlock = ((supported & MediaItem.SUPPORT_UNLOCK) != 0);
         boolean goBack = ((supported & MediaItem.SUPPORT_BACK) != 0);
         boolean launchCamera = ((supported & MediaItem.SUPPORT_CAMERA_SHORTCUT) != 0);
 
-        if (playVideo) {
-            // determine if the point is at center (1/6) of the photo view.
-            // (The position of the "play" icon is at center (1/6) of the photo)
-            int w = mPhotoView.getWidth();
-            int h = mPhotoView.getHeight();
-            playVideo = (Math.abs(x - w / 2) * 12 <= w)
-                && (Math.abs(y - h / 2) * 12 <= h);
-        }
-
-        if (playVideo) {
-            if (mSecureAlbum == null) {
-                playVideo(mActivity, item.getPlayUri(), item.getName());
-            } else {
-                mActivity.getStateManager().finishState(this);
-            }
-        } else if (goBack) {
+        if (goBack) {
             onBackPressed();
         } else if (unlock) {
             Intent intent = new Intent(mActivity, GalleryActivity.class);
@@ -1126,20 +1096,7 @@ public abstract class PhotoPage extends ActivityState implements
         mMenuExecutor.startSingleItemAction(R.id.action_delete, mDeletePath);
         mDeletePath = null;
     }
-
-    public void playVideo(Activity activity, Uri uri, String title) {
-        try {
-            Intent intent = new Intent(Intent.ACTION_VIEW)
-                    .setDataAndType(uri, "video/*")
-                    .putExtra(Intent.EXTRA_TITLE, title)
-                    .putExtra(MovieActivity.KEY_TREAT_UP_AS_BACK, true);
-            activity.startActivityForResult(intent, REQUEST_PLAY_VIDEO);
-        } catch (ActivityNotFoundException e) {
-            Toast.makeText(activity, activity.getString(R.string.video_err),
-                    Toast.LENGTH_SHORT).show();
-        }
-    }
-
+    
     private void setCurrentPhotoByIntent(Intent intent) {
         if (intent == null) return;
         Path path = mApplication.getDataManager()
