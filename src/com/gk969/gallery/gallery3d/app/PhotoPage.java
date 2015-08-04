@@ -108,6 +108,7 @@ public abstract class PhotoPage extends ActivityState implements
     public static final String KEY_SHOW_WHEN_LOCKED = "show_when_locked";
     public static final String KEY_IN_CAMERA_ROLL = "in_camera_roll";
     public static final String KEY_READONLY = "read-only";
+    public static final String KEY_TREAT_UP_AS_BACK = "treat-up-as-back";
 
     public static final String KEY_ALBUMPAGE_TRANSITION = "albumpage-transition";
     public static final int MSG_ALBUMPAGE_NONE = 0;
@@ -1031,11 +1032,27 @@ public abstract class PhotoPage extends ActivityState implements
         }
 
         int supported = item.getSupportedOperations();
+        boolean playVideo = ((supported & MediaItem.SUPPORT_PLAY) != 0);
         boolean unlock = ((supported & MediaItem.SUPPORT_UNLOCK) != 0);
         boolean goBack = ((supported & MediaItem.SUPPORT_BACK) != 0);
         boolean launchCamera = ((supported & MediaItem.SUPPORT_CAMERA_SHORTCUT) != 0);
 
-        if (goBack) {
+        if (playVideo) {
+            // determine if the point is at center (1/6) of the photo view.
+            // (The position of the "play" icon is at center (1/6) of the photo)
+            int w = mPhotoView.getWidth();
+            int h = mPhotoView.getHeight();
+            playVideo = (Math.abs(x - w / 2) * 12 <= w)
+                && (Math.abs(y - h / 2) * 12 <= h);
+        }
+
+        if (playVideo) {
+            if (mSecureAlbum == null) {
+                playVideo(mActivity, item.getPlayUri(), item.getName());
+            } else {
+                mActivity.getStateManager().finishState(this);
+            }
+        } else if (goBack) {
             onBackPressed();
         } else if (unlock) {
             Intent intent = new Intent(mActivity, GalleryActivity.class);
@@ -1096,6 +1113,20 @@ public abstract class PhotoPage extends ActivityState implements
         mMenuExecutor.startSingleItemAction(R.id.action_delete, mDeletePath);
         mDeletePath = null;
     }
+    
+    public void playVideo(Activity activity, Uri uri, String title) {
+        try {
+            Intent intent = new Intent(Intent.ACTION_VIEW)
+                    .setDataAndType(uri, "video/*")
+                    .putExtra(Intent.EXTRA_TITLE, title)
+                    .putExtra(KEY_TREAT_UP_AS_BACK, true);
+            activity.startActivityForResult(intent, REQUEST_PLAY_VIDEO);
+        } catch (ActivityNotFoundException e) {
+            Toast.makeText(activity, activity.getString(R.string.video_err),
+                    Toast.LENGTH_SHORT).show();
+        }
+    }
+    
     
     private void setCurrentPhotoByIntent(Intent intent) {
         if (intent == null) return;
