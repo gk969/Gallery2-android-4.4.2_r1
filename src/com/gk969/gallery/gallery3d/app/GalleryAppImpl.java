@@ -23,7 +23,6 @@ import android.os.AsyncTask;
 import com.gk969.gallery.gallery3d.data.DataManager;
 import com.gk969.gallery.gallery3d.data.DownloadCache;
 import com.gk969.gallery.gallery3d.data.ImageCacheService;
-import com.gk969.gallery.gallery3d.gadget.WidgetUtils;
 import com.gk969.gallery.gallery3d.util.GalleryUtils;
 import com.gk969.gallery.gallery3d.util.LightCycleHelper;
 import com.gk969.gallery.gallery3d.util.ThreadPool;
@@ -47,7 +46,6 @@ public class GalleryAppImpl extends Application implements GalleryApp {
         super.onCreate();
         initializeAsyncTask();
         GalleryUtils.initialize(this);
-        WidgetUtils.initialize(this);
         UsageStatistics.initialize(this);
     }
 

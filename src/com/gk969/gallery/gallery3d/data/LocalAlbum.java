@@ -295,7 +295,7 @@ public class LocalAlbum extends MediaSet {
     }
 
     // Relative path is the absolute path minus external storage path
-    public static String getRelativePath(int bucketId) {
+    public static String getRelativePath0(int bucketId) {
         String relativePath = "/";
         if (bucketId == MediaSetUtils.CAMERA_BUCKET_ID) {
             relativePath += BucketNames.CAMERA;
