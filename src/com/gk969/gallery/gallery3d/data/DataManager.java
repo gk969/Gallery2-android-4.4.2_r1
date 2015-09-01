@@ -177,6 +177,7 @@ public class DataManager implements StitchingChangeListener {
                 if (object == null) {
                     Log.w(TAG, "cannot create media object: " + path);
                 }
+
                 return object;
             } catch (Throwable t) {
                 Log.w(TAG, "exception in creating media object: " + path, t);

@@ -36,6 +36,7 @@ import android.widget.Toast;
 import com.gk969.UltimateImgSpider.R;
 import com.gk969.gallery.gallery3d.common.Utils;
 import com.gk969.gallery.gallery3d.data.DataManager;
+import com.gk969.gallery.gallery3d.data.Log;
 import com.gk969.gallery.gallery3d.data.MediaDetails;
 import com.gk969.gallery.gallery3d.data.MediaItem;
 import com.gk969.gallery.gallery3d.data.MediaObject;
@@ -114,7 +115,6 @@ public class AlbumSetPage extends ActivityState implements
     private int mLoadingBits = 0;
     private boolean mInitialSynced = false;
 
-    private Button mCameraButton;
     private boolean mShowedEmptyToastForSelf = false;
 
     @Override
@@ -139,6 +139,8 @@ public class AlbumSetPage extends ActivityState implements
             } else {
                 mAlbumSetView.setHighlightItemPath(null);
             }
+            
+            Log.i(TAG, "onLayout "+slotViewTop+" "+slotViewRight+" "+slotViewBottom);
 
             mSlotView.layout(0, slotViewTop, slotViewRight, slotViewBottom);
         }
@@ -283,6 +285,7 @@ public class AlbumSetPage extends ActivityState implements
     }
 
     private void onDown(int index) {
+    	Log.i(TAG, "onDown "+index);
         mAlbumSetView.setPressedIndex(index);
     }
 
@@ -347,50 +350,7 @@ public class AlbumSetPage extends ActivityState implements
     @Override
     public void onDestroy() {
         super.onDestroy();
-        cleanupCameraButton();
         mActionModeHandler.destroy();
-    }
-
-    private boolean setupCameraButton() {
-        if (!GalleryUtils.isCameraAvailable(mActivity)) return false;
-        RelativeLayout galleryRoot = (RelativeLayout) ((Activity) mActivity)
-                .findViewById(R.id.gallery_root);
-        if (galleryRoot == null) return false;
-
-        mCameraButton = new Button(mActivity);
-        mCameraButton.setText(R.string.camera_label);
-        mCameraButton.setCompoundDrawablesWithIntrinsicBounds(0, R.drawable.frame_overlay_gallery_camera, 0, 0);
-        mCameraButton.setOnClickListener(new OnClickListener() {
-            @Override
-            public void onClick(View arg0) {
-                GalleryUtils.startCameraActivity(mActivity);
-            }
-        });
-        RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(
-                RelativeLayout.LayoutParams.WRAP_CONTENT,
-                RelativeLayout.LayoutParams.WRAP_CONTENT);
-        lp.addRule(RelativeLayout.CENTER_IN_PARENT);
-        galleryRoot.addView(mCameraButton, lp);
-        return true;
-    }
-
-    private void cleanupCameraButton() {
-        if (mCameraButton == null) return;
-        RelativeLayout galleryRoot = (RelativeLayout) ((Activity) mActivity)
-                .findViewById(R.id.gallery_root);
-        if (galleryRoot == null) return;
-        galleryRoot.removeView(mCameraButton);
-        mCameraButton = null;
-    }
-
-    private void showCameraButton() {
-        if (mCameraButton == null && !setupCameraButton()) return;
-        mCameraButton.setVisibility(View.VISIBLE);
-    }
-
-    private void hideCameraButton() {
-        if (mCameraButton == null) return;
-        mCameraButton.setVisibility(View.GONE);
     }
 
     private void clearLoadingBit(int loadingBit) {
@@ -410,7 +370,6 @@ public class AlbumSetPage extends ActivityState implements
                     mShowedEmptyToastForSelf = true;
                     showEmptyAlbumToast(Toast.LENGTH_LONG);
                     mSlotView.invalidate();
-                    showCameraButton();
                 }
                 return;
             }
@@ -421,7 +380,6 @@ public class AlbumSetPage extends ActivityState implements
         if (mShowedEmptyToastForSelf) {
             mShowedEmptyToastForSelf = false;
             hideEmptyAlbumToast();
-            hideCameraButton();
         }
     }
 
@@ -451,6 +409,8 @@ public class AlbumSetPage extends ActivityState implements
 
     @Override
     public void onResume() {
+    	Log.i(TAG, "onResume");
+    	
         super.onResume();
         mIsActive = true;
         setContentPane(mRootPane);
@@ -471,7 +431,12 @@ public class AlbumSetPage extends ActivityState implements
 
     private void initializeData(Bundle data) {
         String mediaPath = data.getString(AlbumSetPage.KEY_MEDIA_PATH);
+        Log.i(TAG, "initializeData mediaPath:"+mediaPath);
+        
         mMediaSet = mActivity.getDataManager().getMediaSet(mediaPath);
+
+    	Log.i(TAG, "mMediaSet name:"+mMediaSet.getName());
+    	
         mSelectionManager.setSourceMediaSet(mMediaSet);
         mAlbumSetDataAdapter = new AlbumSetDataLoader(
                 mActivity, mMediaSet, DATA_CACHE_SIZE);

@@ -293,33 +293,4 @@ public class LocalAlbum extends MediaSet {
             return name;
         }
     }
-
-    // Relative path is the absolute path minus external storage path
-    public static String getRelativePath0(int bucketId) {
-        String relativePath = "/";
-        if (bucketId == MediaSetUtils.CAMERA_BUCKET_ID) {
-            relativePath += BucketNames.CAMERA;
-        } else if (bucketId == MediaSetUtils.DOWNLOAD_BUCKET_ID) {
-            relativePath += BucketNames.DOWNLOAD;
-        } else if (bucketId == MediaSetUtils.IMPORTED_BUCKET_ID) {
-            relativePath += BucketNames.IMPORTED;
-        } else if (bucketId == MediaSetUtils.SNAPSHOT_BUCKET_ID) {
-            relativePath += BucketNames.SCREENSHOTS;
-        } else if (bucketId == MediaSetUtils.EDITED_ONLINE_PHOTOS_BUCKET_ID) {
-            relativePath += BucketNames.EDITED_ONLINE_PHOTOS;
-        } else {
-            // If the first few cases didn't hit the matching path, do a
-            // thorough search in the local directories.
-            File extStorage = Environment.getExternalStorageDirectory();
-            String path = GalleryUtils.searchDirForPath(extStorage, bucketId);
-            if (path == null) {
-                Log.w(TAG, "Relative path for bucket id: " + bucketId + " is not found.");
-                relativePath = null;
-            } else {
-                relativePath = path.substring(extStorage.getAbsolutePath().length());
-            }
-        }
-        return relativePath;
-    }
-
 }

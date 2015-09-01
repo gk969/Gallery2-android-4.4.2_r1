@@ -18,8 +18,6 @@ package com.gk969.gallery.gallery3d.util;
 
 import android.os.Environment;
 
-import com.gk969.gallery.gallery3d.data.LocalAlbum;
-import com.gk969.gallery.gallery3d.data.LocalMergeAlbum;
 import com.gk969.gallery.gallery3d.data.MediaSet;
 import com.gk969.gallery.gallery3d.data.Path;
 

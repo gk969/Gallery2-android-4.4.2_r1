@@ -92,9 +92,11 @@ public class AlbumSetDataLoader {
                         ((Runnable) message.obj).run();
                         return;
                     case MSG_LOAD_START:
+                    	Log.i(TAG, "MSG_LOAD_START");
                         if (mLoadingListener != null) mLoadingListener.onLoadingStarted();
                         return;
                     case MSG_LOAD_FINISH:
+                    	Log.i(TAG, "MSG_LOAD_FINISH");
                         if (mLoadingListener != null) mLoadingListener.onLoadingFinished(false);
                         return;
                 }
@@ -294,6 +296,11 @@ public class AlbumSetDataLoader {
             // Note: info.index could be INDEX_NONE, i.e., -1
             if (info.index >= mContentStart && info.index < mContentEnd) {
                 int pos = info.index % mCoverItem.length;
+                
+                
+                Log.i(TAG, String.format("UpdateContent pos:%d info.index:%d info.size:%d ",
+                		pos, info.index, info.index));
+                
                 mSetVersion[pos] = info.version;
                 long itemVersion = info.item.getDataVersion();
                 if (mItemVersion[pos] == itemVersion) return null;
@@ -334,6 +341,7 @@ public class AlbumSetDataLoader {
             mIsLoading = loading;
             mMainHandler.sendEmptyMessage(loading ? MSG_LOAD_START : MSG_LOAD_FINISH);
         }
+        
 
         @Override
         public void run() {
@@ -351,10 +359,16 @@ public class AlbumSetDataLoader {
                 mDirty = false;
                 updateLoading(true);
 
+                
                 long version = mSource.reload();
                 UpdateInfo info = executeAndWait(new GetUpdateInfo(version));
+                
                 updateComplete = info == null;
+                
                 if (updateComplete) continue;
+                
+                Log.i(TAG, String.format("reload task index %d version %d", info.index, info.version));
+                
                 if (info.version != version) {
                     info.version = version;
                     info.size = mSource.getSubMediaSetCount();

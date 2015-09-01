@@ -63,11 +63,11 @@ public class GLRootView extends GLSurfaceView
         implements GLSurfaceView.Renderer, GLRoot {
     private static final String TAG = "GLRootView";
 
-    private static final boolean DEBUG_FPS = false;
+    private static final boolean DEBUG_FPS = true;
     private int mFrameCount = 0;
     private long mFrameCountingStart = 0;
 
-    private static final boolean DEBUG_INVALIDATE = false;
+    private static final boolean DEBUG_INVALIDATE = true;
     private int mInvalidateColor = 0;
 
     private static final boolean DEBUG_DRAWING_STAT = false;

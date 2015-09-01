@@ -153,7 +153,8 @@ public class SlotView extends GLView {
     @Override
     protected void onLayout(boolean changeSize, int l, int t, int r, int b) {
         if (!changeSize) return;
-
+        
+        Log.i(TAG, "onLayout "+l+" "+t+" "+r+" "+b);
         // Make sure we are still at a resonable scroll position after the size
         // is changed (like orientation change). We choose to keep the center
         // visible slot still visible. This is arbitrary but reasonable.
@@ -312,6 +313,9 @@ public class SlotView extends GLView {
 
     private int renderItem(
             GLCanvas canvas, int index, int pass, boolean paperActive) {
+    	
+    	//Log.i(TAG, String.format("renderItem index:%d pass:%d", index, pass));
+    	
         canvas.save(GLCanvas.SAVE_FLAG_ALPHA | GLCanvas.SAVE_FLAG_MATRIX);
         Rect rect = mLayout.getSlotRect(index, mTempRect);
         if (paperActive) {

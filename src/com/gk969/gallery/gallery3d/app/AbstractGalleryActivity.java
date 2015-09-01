@@ -48,8 +48,6 @@ import com.gk969.gallery.gallery3d.util.PanoramaViewHelper;
 import com.gk969.gallery.gallery3d.util.ThreadPool;
 import com.gk969.gallery.photos.data.GalleryBitmapPool;
 
-import java.io.FileNotFoundException;
-
 public class AbstractGalleryActivity extends Activity implements GalleryContext {
     private static final String TAG = "AbstractGalleryActivity";
     private GLRootView mGLRootView;
