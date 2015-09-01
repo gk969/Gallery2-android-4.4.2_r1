@@ -255,6 +255,10 @@ public class AlbumSetSlidingWindow implements AlbumSetDataLoader.DataListener {
         entry.setPath = (album == null) ? null : album.getPath();
 
         String title = (album == null) ? "" : Utils.ensureNotNull(album.getName());
+        
+        title+=" a";
+        totalCount+=1000;
+        
         int sourceType = DataSourceType.identifySourceType(album);
         if (isLabelChanged(entry, title, totalCount, sourceType)) {
             entry.title = title;
