@@ -1,0 +1,1093 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:ns1="urn:oasis:names:tc:xliff:document:1.2">
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/arrays.xml -->
+    <eat-comment/>
+    <array name="camera_recordlocation_icons" translatable="false">
+        <item>@drawable/ic_location_off</item>
+        <item>@drawable/ic_location</item>
+    </array>
+    <array name="camera_recordlocation_largeicons" translatable="false">
+        <item>@drawable/ic_location_off</item>
+        <item>@drawable/ic_location</item>
+    </array>
+    <array name="camera_wb_indicators" translatable="false">
+        <item>@drawable/ic_indicator_wb_tungsten</item>
+        <item>@drawable/ic_indicator_wb_fluorescent</item>
+        <item>@drawable/ic_indicator_wb_off</item>
+        <item>@drawable/ic_indicator_wb_daylight</item>
+        <item>@drawable/ic_indicator_wb_cloudy</item>
+    </array>
+    <string-array name="pref_video_effect_entries" translatable="false">
+        <item>@string/effect_none</item>
+        <item>@string/effect_goofy_face_squeeze</item>
+        <item>@string/effect_goofy_face_big_eyes</item>
+        <item>@string/effect_goofy_face_big_mouth</item>
+        <item>@string/effect_goofy_face_small_mouth</item>
+        <item>@string/effect_goofy_face_big_nose</item>
+        <item>@string/effect_goofy_face_small_eyes</item>
+        <item>@string/effect_backdropper_space</item>
+        <item>@string/effect_backdropper_sunset</item>
+        <item>@string/effect_backdropper_gallery</item>
+    </string-array>
+    <string-array name="pref_video_effect_entryvalues" translatable="false">
+        <item>@string/pref_video_effect_default</item>
+        <item>goofy_face/squeeze</item>
+        <item>goofy_face/big_eyes</item>
+        <item>goofy_face/big_mouth</item>
+        <item>goofy_face/small_mouth</item>
+        <item>goofy_face/big_nose</item>
+        <item>goofy_face/small_eyes</item>
+        <item>backdropper/file:///system/media/video/AndroidInSpace.480p.mp4</item>
+        <item>backdropper/file:///system/media/video/Sunset.480p.mp4</item>
+        <item>backdropper/gallery</item>
+    </string-array>
+    <string-array name="pref_video_quality_entries" translatable="false">
+        <item>@string/pref_video_quality_entry_1080p</item>
+        <item>@string/pref_video_quality_entry_720p</item>
+        <item>@string/pref_video_quality_entry_480p</item>
+        <item>@string/pref_video_quality_entry_high</item>
+        <item>@string/pref_video_quality_entry_low</item>
+   </string-array>
+    <string-array name="pref_video_quality_entryvalues" translatable="false">
+        <!-- The integer value of CamcorderProfile.QUALITY_1080P -->
+        <item>6</item>
+        <!-- The integer value of CamcorderProfile.QUALITY_720P -->
+        <item>@string/pref_video_quality_default</item>
+        <!-- The integer value of CamcorderProfile.QUALITY_480P -->
+        <item>4</item>
+        <!-- The integer value of CamcorderProfile.QUALITY_HIGH -->
+        <item>1</item>
+         <!-- The integer value of CamcorderProfile.QUALITY_LOW -->
+        <item>0</item>
+    </string-array>
+    <string-array name="pref_video_time_lapse_frame_interval_duration_values" translatable="false">
+        <item>0.5</item>
+        <item>1</item>
+        <item>1.5</item>
+        <item>2</item>
+        <item>2.5</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>10</item>
+        <item>12</item>
+        <item>15</item>
+        <item>24</item>
+    </string-array>
+    <string-array name="pref_video_time_lapse_frame_interval_entries">
+        <item>@string/pref_video_time_lapse_frame_interval_off</item>
+        <item>@string/pref_video_time_lapse_frame_interval_500</item>
+        <item>@string/pref_video_time_lapse_frame_interval_1000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_1500</item>
+        <item>@string/pref_video_time_lapse_frame_interval_2000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_2500</item>
+        <item>@string/pref_video_time_lapse_frame_interval_3000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_4000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_5000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_6000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_10000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_12000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_15000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_24000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_30000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_60000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_90000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_120000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_150000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_180000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_240000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_300000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_360000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_600000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_720000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_900000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_1440000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_1800000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_3600000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_5400000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_7200000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_9000000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_10800000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_14400000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_18000000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_21600000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_36000000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_43200000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_54000000</item>
+        <item>@string/pref_video_time_lapse_frame_interval_86400000</item>
+    </string-array>
+    <string-array name="pref_video_time_lapse_frame_interval_entryvalues" translatable="false">
+        <item>0</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>1500</item>
+        <item>2000</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>4000</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>10000</item>
+        <item>12000</item>
+        <item>15000</item>
+        <item>24000</item>
+        <item>30000</item>
+        <item>60000</item>
+        <item>90000</item>
+        <item>120000</item>
+        <item>150000</item>
+        <item>180000</item>
+        <item>240000</item>
+        <item>300000</item>
+        <item>360000</item>
+        <item>600000</item>
+        <item>720000</item>
+        <item>900000</item>
+        <item>1440000</item>
+        <item>1800000</item>
+        <item>3600000</item>
+        <item>5400000</item>
+        <item>7200000</item>
+        <item>9000000</item>
+        <item>10800000</item>
+        <item>14400000</item>
+        <item>18000000</item>
+        <item>21600000</item>
+        <item>36000000</item>
+        <item>43200000</item>
+        <item>54000000</item>
+        <item>86400000</item>
+    </string-array>
+    <string-array name="pref_video_time_lapse_frame_interval_units">
+        <item>@string/time_lapse_seconds</item>
+        <item>@string/time_lapse_minutes</item>
+        <item>@string/time_lapse_hours</item>
+    </string-array>
+    <array name="video_effect_icons" translatable="false">
+        <item>@drawable/ic_effects_holo_light</item>
+        <item>@drawable/ic_video_effects_faces_squeeze_holo_dark</item>
+        <item>@drawable/ic_video_effects_faces_big_eyes_holo_dark</item>
+        <item>@drawable/ic_video_effects_faces_big_mouth_holo_dark</item>
+        <item>@drawable/ic_video_effects_faces_small_mouth_holo_dark</item>
+        <item>@drawable/ic_video_effects_faces_big_nose_holo_dark</item>
+        <item>@drawable/ic_video_effects_faces_small_eyes_holo_dark</item>
+        <item>@drawable/ic_video_effects_background_intergalactic_holo</item>
+        <item>@drawable/ic_video_effects_background_fields_of_wheat_holo</item>
+        <item>@drawable/ic_video_effects_background_normal_holo_dark</item>
+    </array>
+    <array name="video_flashmode_icons" translatable="false">
+        <item>@drawable/ic_flash_on_holo_light</item>
+        <item>@drawable/ic_flash_off_holo_light</item>
+    </array>
+    <array name="video_flashmode_largeicons" translatable="false">
+        <item>@drawable/ic_flash_on_holo_light</item>
+        <item>@drawable/ic_flash_off_holo_light</item>
+    </array>
+    <array name="whitebalance_icons" translatable="false">
+        <item>@drawable/ic_wb_incandescent</item>
+        <item>@drawable/ic_wb_fluorescent</item>
+        <item>@drawable/ic_wb_auto</item>
+        <item>@drawable/ic_wb_sunlight</item>
+        <item>@drawable/ic_wb_cloudy</item>
+    </array>
+    <array name="whitebalance_largeicons" translatable="false">
+        <item>@drawable/ic_wb_incandescent</item>
+        <item>@drawable/ic_wb_fluorescent</item>
+        <item>@drawable/ic_wb_auto</item>
+        <item>@drawable/ic_wb_sunlight</item>
+        <item>@drawable/ic_wb_cloudy</item>
+    </array>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <bool name="picker_is_dialog">false</bool>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/bool.xml -->
+    <eat-comment/>
+    <bool name="show_action_bar_title">false</bool>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="album_background">#1A1A1A</color>
+    <color name="album_placeholder">#333</color>
+    <color name="albumset_background">#1A1A1A</color>
+    <color name="albumset_label_background">#EE414143</color>
+    <color name="albumset_label_count">#A9ABAD</color>
+    <color name="albumset_label_title">#FBFBFB</color>
+    <color name="albumset_placeholder">#333</color>
+    <color name="bitmap_screennail_placeholder">#333</color>
+    <color name="bright_foreground_disabled_holo_dark">#ff4c4c4c</color>
+    <color name="bright_foreground_holo_dark">#fff3f3f3</color>
+    <color name="button_dark_transparent_background">#6000</color>
+    <color name="cache_background">#1A1A1A</color>
+    <color name="cache_placeholder">#333</color>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/crop_colors.xml -->
+    <eat-comment/>
+    <color name="crop_shadow_color">#CF000000</color>
+    <color name="crop_shadow_wp_color">#4F000000</color>
+    <color name="crop_wp_markers">#7FFFFFFF</color>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <color name="darker_transparent">#C1000000</color>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="default_background">#000</color>
+    <color name="face_detect_fail">#80d05060</color>
+    <color name="face_detect_start">#80ffffff</color>
+    <color name="face_detect_success">#8050d060</color>
+    <color name="gray">#FFAAAAAA</color>
+    <color name="holo_blue_light">#ff33b5e5</color>
+    <color name="icon_disabled_color">#DD777777</color>
+    <color name="indicator_background">#40000000</color>
+    <color name="ingest_date_tile_text">#33b5e5</color>
+    <color name="ingest_highlight_semitransparent">#8833b5e5</color>
+    <color name="mode_selection_border">#33B5E5</color>
+    <color name="on_viewfinder_label_background_color">#77333333</color>
+    <color name="pano_progress_done">#FF33525E</color>
+    <color name="pano_progress_empty">#FF2E2E2E</color>
+    <color name="pano_progress_indication">#FF0099CC</color>
+    <color name="pano_progress_indication_fast">#FFFF2222</color>
+    <color name="photo_background">#1A1A1A</color>
+    <color name="photo_placeholder">#333</color>
+    <color name="popup_background">#ff282828</color>
+    <color name="popup_title_color">#ff33b5e5</color>
+    <color name="recording_time_elapsed_text">#FFFFFFFF</color>
+    <color name="recording_time_remaining_text">#FFFF0033</color>
+    <color name="review_background">#FF000000</color>
+    <color name="review_control_pressed_color">#FF33B5E5</color>
+    <color name="review_control_pressed_fan_color">#3F33B5E5</color>
+    <color name="slideshow_background">#1A1A1A</color>
+    <color name="time_lapse_arc">#FFC5C5C5</color>
+    <declare-styleable name="CameraPreference"><attr format="string" name="title"/></declare-styleable>
+    <declare-styleable name="IconIndicator"><attr format="reference" name="icons"/><attr format="reference" name="modes"/></declare-styleable>
+    <declare-styleable name="IconListPreference"><attr format="reference" name="singleIcon"/><attr name="icons"/><attr format="reference" name="largeIcons"/><attr format="reference" name="images"/></declare-styleable>
+    <declare-styleable name="ListPreference"><attr format="string" name="key"/><attr format="string|reference" name="defaultValue"/><attr format="reference" name="entryValues"/><attr format="reference" name="entries"/><attr format="reference" name="labelList"/></declare-styleable>
+    <declare-styleable name="Theme.GalleryBase"><attr format="dimension" name="listPreferredItemHeightSmall"/><attr format="reference" name="switchStyle"/></declare-styleable>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="action_item_height">175dip</dimen>
+    <dimen name="album_set_item_image_height">120dp</dimen>
+    <dimen name="album_set_item_width">140dp</dimen>
+    <dimen name="album_slot_gap">5dp</dimen>
+    <dimen name="albumset_count_font_size">9sp</dimen>
+    <dimen name="albumset_count_offset">10dp</dimen>
+    <dimen name="albumset_icon_size">25dp</dimen>
+    <dimen name="albumset_label_background_height">30dp</dimen>
+    <dimen name="albumset_left_margin">2dp</dimen>
+    <dimen name="albumset_padding_bottom">7dp</dimen>
+    <dimen name="albumset_padding_top">7dp</dimen>
+    <dimen name="albumset_slot_gap">7dp</dimen>
+    <dimen name="albumset_title_font_size">12sp</dimen>
+    <dimen name="albumset_title_offset">10dp</dimen>
+    <dimen name="albumset_title_right_margin">40dp</dimen>
+    <dimen name="appwidget_height">180dp</dimen>
+    <dimen name="appwidget_width">180dp</dimen>
+    <dimen name="big_setting_popup_window_width">320dp</dimen>
+    <dimen name="big_setting_popup_window_width_xlarge">590dp</dimen>
+    <dimen name="cache_pin_margin">8dp</dimen>
+    <dimen name="cache_pin_size">24dp</dimen>
+    <dimen name="camera_controls_size">0dip</dimen>
+    <dimen name="camera_film_strip_gap">32dip</dimen>
+    <dimen name="capture_border">8dip</dimen>
+    <dimen name="capture_margin_right">16dip</dimen>
+    <dimen name="capture_margin_top">16dip</dimen>
+    <dimen name="capture_size">48dip</dimen>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/crop_dimens.xml -->
+    <eat-comment/>
+    <dimen name="crop_min_side">45dp</dimen>
+    <dimen name="crop_touch_tolerance">20dp</dimen>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="effect_setting_clear_text_min_height">45dp</dimen>
+    <dimen name="effect_setting_clear_text_min_height_xlarge">44dp</dimen>
+    <dimen name="effect_setting_clear_text_size">20dp</dimen>
+    <dimen name="effect_setting_clear_text_size_xlarge">23dp</dimen>
+    <dimen name="effect_setting_item_icon_width">40dp</dimen>
+    <dimen name="effect_setting_item_icon_width_xlarge">54dp</dimen>
+    <dimen name="effect_setting_item_text_size">12sp</dimen>
+    <dimen name="effect_setting_item_text_size_xlarge">21dp</dimen>
+    <dimen name="effect_setting_type_text_left_padding">16dp</dimen>
+    <dimen name="effect_setting_type_text_left_padding_xlarge">26dp</dimen>
+    <dimen name="effect_setting_type_text_min_height">36dp</dimen>
+    <dimen name="effect_setting_type_text_min_height_xlarge">34dp</dimen>
+    <dimen name="effect_setting_type_text_size">12sp</dimen>
+    <dimen name="effect_setting_type_text_size_xlarge">21dp</dimen>
+    <dimen name="face_circle_stroke">2dip</dimen>
+    <dimen name="focus_inner_offset">24dp</dimen>
+    <dimen name="focus_inner_stroke">2dp</dimen>
+    <dimen name="focus_outer_stroke">3dp</dimen>
+    <dimen name="focus_radius_offset">8dp</dimen>
+    <dimen name="hint_y_offset">64dp</dimen>
+    <dimen name="indicator_bar_width">48dp</dimen>
+    <dimen name="indicator_bar_width_large">72dp</dimen>
+    <dimen name="indicator_bar_width_xlarge">13dp</dimen>
+    <dimen name="manage_cache_bottom_height">48dp</dimen>
+    <dimen name="navigation_bar_height">48dip</dimen>
+    <dimen name="navigation_bar_width">42dip</dimen>
+    <dimen name="onscreen_exposure_indicator_text_size">15dp</dimen>
+    <dimen name="onscreen_exposure_indicator_text_size_xlarge">18dp</dimen>
+    <dimen name="onscreen_indicators_height">28dp</dimen>
+    <dimen name="onscreen_indicators_height_large">36dp</dimen>
+    <dimen name="onscreen_indicators_height_xlarge">36dp</dimen>
+    <dimen name="pano_mosaic_surface_height">240dp</dimen>
+    <dimen name="pano_mosaic_surface_height_xlarge">480dp</dimen>
+    <dimen name="pano_review_button_height">45dp</dimen>
+    <dimen name="pano_review_button_height_xlarge">115dp</dimen>
+    <dimen name="pano_review_button_width">70dp</dimen>
+    <dimen name="pano_review_button_width_xlarge">180dp</dimen>
+    <dimen name="photoeditor_original_text_margin">4dp</dimen>
+    <dimen name="photoeditor_original_text_size">18dp</dimen>
+    <dimen name="photoeditor_text_padding">10dp</dimen>
+    <dimen name="photoeditor_text_size">12dp</dimen>
+    <dimen name="pie_anglezone_width">92dp</dimen>
+    <dimen name="pie_arc_offset">48dp</dimen>
+    <dimen name="pie_arc_radius">214dp</dimen>
+    <dimen name="pie_deadzone_width">36dp</dimen>
+    <dimen name="pie_item_radius">370dp</dimen>
+    <dimen name="pie_radius_increment">48dp</dimen>
+    <dimen name="pie_radius_start">80dp</dimen>
+    <dimen name="pie_touch_offset">32dp</dimen>
+    <dimen name="pie_touch_slop">12dp</dimen>
+    <dimen name="pie_view_size">48dp</dimen>
+    <dimen name="popup_title_frame_min_height">49dp</dimen>
+    <dimen name="popup_title_frame_min_height_xlarge">60dp</dimen>
+    <dimen name="popup_title_text_size">22dp</dimen>
+    <dimen name="popup_title_text_size_xlarge">22dp</dimen>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/crop_dimens.xml -->
+    <eat-comment/>
+    <dimen name="preview_margin">2dp</dimen>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="setting_item_icon_width">28dp</dimen>
+    <dimen name="setting_item_icon_width_large">48dp</dimen>
+    <dimen name="setting_item_icon_width_xlarge">35dp</dimen>
+    <dimen name="setting_item_list_margin">14dp</dimen>
+    <dimen name="setting_item_list_margin_xlarge">24dp</dimen>
+    <dimen name="setting_item_text_size">18sp</dimen>
+    <dimen name="setting_item_text_size_xlarge">21dp</dimen>
+    <dimen name="setting_item_text_width">95dp</dimen>
+    <dimen name="setting_item_text_width_xlarge">130dp</dimen>
+    <dimen name="setting_knob_text_size">20dp</dimen>
+    <dimen name="setting_knob_width">20dp</dimen>
+    <dimen name="setting_knob_width_xlarge">50dp</dimen>
+    <dimen name="setting_popup_right_margin">5dp</dimen>
+    <dimen name="setting_popup_right_margin_large">8dp</dimen>
+    <dimen name="setting_popup_window_width">240dp</dimen>
+    <dimen name="setting_popup_window_width_large">260dp</dimen>
+    <dimen name="setting_popup_window_width_xlarge">410dp</dimen>
+    <dimen name="setting_row_height">50dp</dimen>
+    <dimen name="setting_row_height_large">54dp</dimen>
+    <dimen name="setting_row_height_xlarge">50dp</dimen>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/crop_dimens.xml -->
+    <eat-comment/>
+    <dimen name="shadow_margin">5dp</dimen>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="shutter_offset">-22dp</dimen>
+    <dimen name="size_preview">400dip</dimen>
+    <dimen name="size_thumbnail">200dip</dimen>
+    <dimen name="stack_photo_height">120dp</dimen>
+    <dimen name="stack_photo_width">160dp</dimen>
+    <dimen name="switch_min_width">96dp</dimen>
+    <dimen name="switch_padding">16dp</dimen>
+    <dimen name="switch_text_max_width">44dp</dimen>
+    <dimen name="switcher_size">72dp</dimen>
+    <dimen name="thumb_text_padding">12dp</dimen>
+    <dimen name="thumb_text_size">14sp</dimen>
+    <dimen name="thumbnail_margin">3dip</dimen>
+    <dimen name="thumbnail_size">96dip</dimen>
+    <dimen name="touch_circle_size">8dp</dimen>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/crop_dimens.xml -->
+    <eat-comment/>
+    <dimen name="wp_selector_dash_length">4dp</dimen>
+    <dimen name="wp_selector_off_length">4dp</dimen>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="zoom_font_size">14pt</dimen>
+    <dimen name="zoom_ring_min">48dp</dimen>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/ids.xml -->
+    <eat-comment/>
+    <item name="action_select_all" type="id"/>
+    <item name="action_toggle_full_caching" type="id"/>
+    <item name="viewpager" type="id"/>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <integer name="album_rows_land">2</integer>
+    <integer name="album_rows_port">4</integer>
+    <integer name="albumset_rows_land">2</integer>
+    <integer name="albumset_rows_port">3</integer>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/config.xml -->
+    <eat-comment/>
+    <integer name="max_video_recording_length">0</integer>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <plurals name="delete_selection">
+        <item quantity="one">Delete selected item?</item>
+        <item quantity="other">Delete selected items?</item>
+    </plurals>
+    <plurals name="ingest_number_of_items_scanned">
+        <item quantity="zero">%1$d items scanned</item>
+        <item quantity="one">%1$d item scanned</item>
+        <item quantity="other">%1$d items scanned</item>
+    </plurals>
+    <plurals name="make_albums_available_offline">
+        <item quantity="one">Making album available offline.</item>
+        <item quantity="other">Making albums available offline.</item>
+    </plurals>
+    <plurals name="number_of_albums_selected">
+        <item quantity="zero">%1$d selected</item>
+        <item quantity="one">%1$d selected</item>
+        <item quantity="other">%1$d selected</item>
+    </plurals>
+    <plurals name="number_of_groups_selected">
+        <item quantity="zero">%1$d selected</item>
+        <item quantity="one">%1$d selected</item>
+        <item quantity="other">%1$d selected</item>
+    </plurals>
+    <plurals name="number_of_items_selected">
+        <item quantity="zero">%1$d selected</item>
+        <item quantity="one">%1$d selected</item>
+        <item quantity="other">%1$d selected</item>
+    </plurals>
+    <plurals name="number_of_photos">
+        <item quantity="one">%1$d photo</item>
+        <item quantity="other">%1$d photos</item>
+    </plurals>
+    <string name="Import">Import</string>
+    <string name="accessibility_back_to_first_level">Close setting controls</string>
+    <string name="accessibility_camera_picker">Front and back camera switch</string>
+    <string name="accessibility_check_box">%1$s check box</string>
+    <string name="accessibility_decrement">Decrease %1$s</string>
+    <string name="accessibility_increment">Increase %1$s</string>
+    <string name="accessibility_menu_button">Menu button</string>
+    <string name="accessibility_mode_picker">Camera, video, or panorama selector</string>
+    <string name="accessibility_pause_video">Pause video</string>
+    <string name="accessibility_play_video">Play video</string>
+    <string name="accessibility_reload_video">Reload video</string>
+    <string name="accessibility_review_cancel">Review cancel</string>
+    <string name="accessibility_review_ok">Review done</string>
+    <string name="accessibility_review_retake">Review retake</string>
+    <string name="accessibility_review_thumbnail">Most recent photo</string>
+    <string name="accessibility_second_level_indicators">More setting controls</string>
+    <string name="accessibility_shutter_button">Shutter button</string>
+    <string name="accessibility_switch_to_new_panorama">Switch to new panorama</string>
+    <string name="accessibility_switch_to_panorama">Switch to panorama</string>
+    <string name="accessibility_switch_to_refocus">Switch to Refocus</string>
+    <string name="accessibility_switch_to_video">Switch to video</string>
+    <string name="accessibility_time_bar">Video player time bar</string>
+    <string name="accessibility_zoom_control">Zoom control</string>
+    <string name="add_account">Add account</string>
+    <string name="albums">Albums</string>
+    <string name="aperture">Aperture</string>
+    <string name="app_name">Gallery</string>
+    <string name="appwidget_empty_text">No photos.</string>
+    <string name="appwidget_title">Photo Gallery</string>
+    <string name="auto">Auto</string>
+    <string name="bg_replacement_message">Set your device down.\nStep out of view for a moment.</string>
+    <string name="caching_label">Caching\u2026</string>
+    <string name="camera_connected">Camera connected.</string>
+    <string name="camera_disconnected">Camera disconnected.</string>
+    <string name="camera_menu_more_label">MORE OPTIONS</string>
+    <string name="camera_menu_settings_label">SETTINGS</string>
+    <string name="camera_setas_wallpaper">Wallpaper</string>
+    <string name="cancel">Cancel</string>
+    <string name="capital_off">OFF</string>
+    <string name="capital_on">ON</string>
+    <string name="clear_effects">Clear effects</string>
+    <string name="click_import">Touch here to import</string>
+    <string name="close">Close</string>
+    <string name="confirm">Confirm</string>
+    <string name="count_down_title_text">Counting down to take a photo</string>
+    <string name="crop_save_text">OK</string>
+    <string name="delete">Delete</string>
+    <string name="deleted">Deleted</string>
+    <string name="description">Description</string>
+    <string name="deselect_all">Deselect all</string>
+    <string name="details">Details</string>
+    <string name="details_hms">%1$d:%2$02d:%3$02d</string>
+    <string name="details_ms">%1$02d:%2$02d</string>
+    <string name="details_title">%1$d of %2$d items:</string>
+    <string name="dialog_ok">OK</string>
+    <string name="disable_video_snapshot_hint">Video snapshot is disabled when special effects are on.</string>
+    <string name="done">Done</string>
+    <string name="duration">Duration</string>
+    <string name="effect_backdropper_gallery">Your video</string>
+    <string name="effect_backdropper_space">In space</string>
+    <string name="effect_backdropper_sunset">Sunset</string>
+    <string name="effect_background">BACKGROUND</string>
+    <string name="effect_goofy_face_big_eyes">Big eyes</string>
+    <string name="effect_goofy_face_big_mouth">Big mouth</string>
+    <string name="effect_goofy_face_big_nose">Big nose</string>
+    <string name="effect_goofy_face_small_eyes">Small eyes</string>
+    <string name="effect_goofy_face_small_mouth">Small mouth</string>
+    <string name="effect_goofy_face_squeeze">Squeeze</string>
+    <string name="effect_none">None</string>
+    <string name="effect_silly_faces">SILLY FACES</string>
+    <string name="empty" translatable="false">" "</string>
+    <string name="empty_album">O images/videos available.</string>
+    <string name="exposure_time">Exposure time</string>
+    <string name="fail_to_load">Couldn\'t load</string>
+    <string name="fail_to_load_image">Couldn\'t load the image</string>
+    <string name="ffx_bleach">Bleach</string>
+    <string name="ffx_blue_crush">Blue</string>
+    <string name="ffx_bw_contrast">B/W</string>
+    <string name="ffx_instant">Instant</string>
+    <string name="ffx_original">Original</string>
+    <string name="ffx_punch">Punch</string>
+    <string name="ffx_vintage">Vintage</string>
+    <string name="ffx_washout">Latte</string>
+    <string name="ffx_washout_color">Litho</string>
+    <string name="ffx_x_process">X Process</string>
+    <string name="file_size">File size</string>
+    <string name="flash">Flash</string>
+    <string name="flash_off">No flash</string>
+    <string name="flash_on">Flash fired</string>
+    <string name="focal_length">Focal Length</string>
+    <string name="folder_camera">Camera</string>
+    <string name="folder_download">Download</string>
+    <string name="folder_edited_online_photos">Edited Online Photos</string>
+    <string name="folder_imported">Imported</string>
+    <string name="folder_screenshot">Screenshot</string>
+    <string name="free_space_format"><ns1:g id="bytes">%s</ns1:g> free</string>
+    <string name="gadget_title">Picture frame</string>
+    <string name="group_by_album">By album</string>
+    <string name="group_by_faces">By people</string>
+    <string name="group_by_location">By location</string>
+    <string name="group_by_size">By size</string>
+    <string name="group_by_tags">By tags</string>
+    <string name="group_by_time">By time</string>
+    <string name="height">Height</string>
+    <string name="help">Help</string>
+    <string name="image_file_name_format" translatable="false">"'IMG'_yyyyMMdd_HHmmss"</string>
+    <string name="import_complete">Import complete</string>
+    <string name="import_fail">Import unsuccessful</string>
+    <string name="ingest_empty_device">There is no content available for importing on this device.</string>
+    <string name="ingest_importing">Importing...</string>
+    <string name="ingest_no_device">There is no MTP device connected</string>
+    <string msgid="2048262851775139720" name="ingest_scanning">Scanning content...</string>
+    <string name="ingest_scanning_done">Scanning done</string>
+    <string msgid="624687230903648118" name="ingest_sorting">Sorting...</string>
+    <string name="iso">ISO</string>
+    <string name="loading">Loading\u2026</string>
+    <string name="loading_account">Loading account\u2026</string>
+    <string name="loading_image">Loading image\u2026</string>
+    <string name="loading_video">Loading video\u2026</string>
+    <string name="location">Location</string>
+    <string name="locations">Locations</string>
+    <string name="maker">Maker</string>
+    <string name="manual">Manual</string>
+    <string name="menu_camera">Camera</string>
+    <string name="menu_search">Search</string>
+    <string name="mimetype">MIME type</string>
+    <string name="model">Model</string>
+    <string name="movie_view_label">Video player</string>
+    <string name="mute_action">Mute</string>
+    <string name="muting">Muting</string>
+    <string name="no_albums_alert">No albums available.</string>
+    <string name="no_connectivity">Some locations couldn\'t be identified due to network problems.</string>
+    <string name="no_external_storage">No external storage available</string>
+    <string name="no_external_storage_title">No Storage</string>
+    <string name="no_location">No location</string>
+    <string name="no_such_item">Couldn\'t find item.</string>
+    <string name="no_thumbnail">No thumbnail</string>
+    <string name="not_selectable_in_scene_mode">Not selectable in scene mode.</string>
+    <string name="ok">OK</string>
+    <string name="orientation">Orientation</string>
+    <string name="pano_capture_indication">Capturing panorama</string>
+    <string name="pano_dialog_panorama_failed">Couldn\'t save panorama.</string>
+    <string name="pano_dialog_prepare_preview">Preparing panorama</string>
+    <string name="pano_dialog_title">Panorama</string>
+    <string name="pano_dialog_waiting_previous">Waiting for previous panorama</string>
+    <string name="pano_file_name_format" translatable="false">"'PANO'_yyyyMMdd_HHmmss"</string>
+    <string name="pano_progress_text">Rendering panorama</string>
+    <string name="pano_review_rendering">Rendering panorama</string>
+    <string name="pano_review_saving_indication_str">Saving\u2026</string>
+    <string name="pano_too_fast_prompt">Too fast</string>
+    <string name="path">Path</string>
+    <string name="people">People</string>
+    <string name="please_wait">Please wait</string>
+    <string name="pref_camcorder_settings_category">Camcorder settings</string>
+    <string name="pref_camera_countdown_label">COUNTDOWN TIMER</string>
+    <string name="pref_camera_countdown_label_fifteen">15 SECONDS</string>
+    <string name="pref_camera_countdown_label_off">TIMER OFF</string>
+    <string name="pref_camera_countdown_label_one">1 SECOND</string>
+    <string name="pref_camera_countdown_label_ten">10 SECONDS</string>
+    <string name="pref_camera_countdown_label_three">3 SECONDS</string>
+    <string name="pref_camera_flashmode_default" translatable="false">auto</string>
+    <string name="pref_camera_flashmode_entry_auto">Auto</string>
+    <string name="pref_camera_flashmode_entry_off">Off</string>
+    <string name="pref_camera_flashmode_entry_on">On</string>
+    <string name="pref_camera_flashmode_label">FLASH MODE</string>
+    <string name="pref_camera_flashmode_label_auto">FLASH AUTO</string>
+    <string name="pref_camera_flashmode_label_off">FLASH OFF</string>
+    <string name="pref_camera_flashmode_label_on">FLASH ON</string>
+    <string name="pref_camera_flashmode_no_flash" translatable="false">no_flash</string>
+    <string name="pref_camera_flashmode_title">Flash mode</string>
+    <string name="pref_camera_focusmode_entry_auto">Auto</string>
+    <string name="pref_camera_focusmode_entry_infinity">Infinity</string>
+    <string name="pref_camera_focusmode_entry_macro">Macro</string>
+    <string name="pref_camera_focusmode_label_auto">AUTO</string>
+    <string name="pref_camera_focusmode_label_infinity">INFINITY</string>
+    <string name="pref_camera_focusmode_label_macro">MACRO</string>
+    <string name="pref_camera_focusmode_title">Focus mode</string>
+    <string name="pref_camera_hdr_default">@string/setting_off_value</string>
+    <string name="pref_camera_hdr_label">HDR</string>
+    <string name="pref_camera_id_label_back">FRONT CAMERA</string>
+    <string name="pref_camera_id_label_front">BACK CAMERA</string>
+    <string name="pref_camera_picturesize_entry_13mp">13M pixels</string>
+    <string name="pref_camera_picturesize_entry_1_3mp">1.3M pixels</string>
+    <string name="pref_camera_picturesize_entry_1mp">1M pixels</string>
+    <string name="pref_camera_picturesize_entry_2mp">2M pixels</string>
+    <string name="pref_camera_picturesize_entry_2mp_wide">2M pixels (16:9)</string>
+    <string name="pref_camera_picturesize_entry_3mp">3M pixels</string>
+    <string name="pref_camera_picturesize_entry_4mp">4M pixels</string>
+    <string name="pref_camera_picturesize_entry_5mp">5M pixels</string>
+    <string name="pref_camera_picturesize_entry_8mp">8M pixels</string>
+    <string name="pref_camera_picturesize_entry_qvga">QVGA</string>
+    <string name="pref_camera_picturesize_entry_vga">VGA</string>
+    <string name="pref_camera_picturesize_title">Picture size</string>
+    <string name="pref_camera_scenemode_default" translatable="false">auto</string>
+    <string name="pref_camera_scenemode_entry_action">Action</string>
+    <string name="pref_camera_scenemode_entry_auto">Auto</string>
+    <string name="pref_camera_scenemode_entry_hdr">HDR</string>
+    <string name="pref_camera_scenemode_entry_night">Night</string>
+    <string name="pref_camera_scenemode_entry_party">Party</string>
+    <string name="pref_camera_scenemode_entry_sunset">Sunset</string>
+    <string name="pref_camera_scenemode_label_action">ACTION</string>
+    <string name="pref_camera_scenemode_label_auto">NONE</string>
+    <string name="pref_camera_scenemode_label_night">NIGHT</string>
+    <string name="pref_camera_scenemode_label_party">PARTY</string>
+    <string name="pref_camera_scenemode_label_sunset">SUNSET</string>
+    <string name="pref_camera_scenemode_title">Scene mode</string>
+    <string name="pref_camera_settings_category">Camera settings</string>
+    <string name="pref_camera_video_flashmode_default" translatable="false">off</string>
+    <string name="pref_camera_whitebalance_default" translatable="false">auto</string>
+    <string name="pref_camera_whitebalance_entry_auto">Auto</string>
+    <string name="pref_camera_whitebalance_entry_cloudy">Cloudy</string>
+    <string name="pref_camera_whitebalance_entry_daylight">Daylight</string>
+    <string name="pref_camera_whitebalance_entry_fluorescent">Fluorescent</string>
+    <string name="pref_camera_whitebalance_entry_incandescent">Incandescent</string>
+    <string name="pref_camera_whitebalance_label">WHITE BALANCE</string>
+    <string name="pref_camera_whitebalance_label_auto">AUTO</string>
+    <string name="pref_camera_whitebalance_label_cloudy">CLOUDY</string>
+    <string name="pref_camera_whitebalance_label_daylight">DAYLIGHT</string>
+    <string name="pref_camera_whitebalance_label_fluorescent">FLUORESCENT</string>
+    <string name="pref_camera_whitebalance_label_incandescent">INCANDESCENT</string>
+    <string name="pref_camera_whitebalance_title">White balance</string>
+    <string name="pref_exposure_default" translatable="false">0</string>
+    <string name="pref_exposure_label">EXPOSURE</string>
+    <string name="pref_exposure_title">Exposure</string>
+    <string name="pref_video_effect_default" translatable="false">none</string>
+    <string name="pref_video_effect_title">Effects</string>
+    <string name="pref_video_quality_default" translatable="false">5</string>
+    <string name="pref_video_quality_entry_1080p" translatable="false">HD 1080p</string>
+    <string name="pref_video_quality_entry_480p" translatable="false">SD 480p</string>
+    <string name="pref_video_quality_entry_720p" translatable="false">HD 720p</string>
+    <string name="pref_video_quality_entry_high">High</string>
+    <string name="pref_video_quality_entry_low">Low</string>
+    <string name="pref_video_quality_title">Video quality</string>
+    <string name="pref_video_time_lapse_frame_interval_1000">1 second</string>
+    <string name="pref_video_time_lapse_frame_interval_10000">10 seconds</string>
+    <string name="pref_video_time_lapse_frame_interval_10800000">3 hours</string>
+    <string name="pref_video_time_lapse_frame_interval_12000">12 seconds</string>
+    <string name="pref_video_time_lapse_frame_interval_120000">2 minutes</string>
+    <string name="pref_video_time_lapse_frame_interval_1440000">24 minutes</string>
+    <string name="pref_video_time_lapse_frame_interval_14400000">4 hours</string>
+    <string name="pref_video_time_lapse_frame_interval_1500">1.5 seconds</string>
+    <string name="pref_video_time_lapse_frame_interval_15000">15 seconds</string>
+    <string name="pref_video_time_lapse_frame_interval_150000">2.5 minutes</string>
+    <string name="pref_video_time_lapse_frame_interval_180000">3 minutes</string>
+    <string name="pref_video_time_lapse_frame_interval_1800000">0.5 hours</string>
+    <string name="pref_video_time_lapse_frame_interval_18000000">5 hours</string>
+    <string name="pref_video_time_lapse_frame_interval_2000">2 seconds</string>
+    <string name="pref_video_time_lapse_frame_interval_21600000">6 hours</string>
+    <string name="pref_video_time_lapse_frame_interval_24000">24 seconds</string>
+    <string name="pref_video_time_lapse_frame_interval_240000">4 minutes</string>
+    <string name="pref_video_time_lapse_frame_interval_2500">2.5 seconds</string>
+    <string name="pref_video_time_lapse_frame_interval_3000">3 seconds</string>
+    <string name="pref_video_time_lapse_frame_interval_30000">0.5 minutes</string>
+    <string name="pref_video_time_lapse_frame_interval_300000">5 minutes</string>
+    <string name="pref_video_time_lapse_frame_interval_360000">6 minutes</string>
+    <string name="pref_video_time_lapse_frame_interval_3600000">1 hour</string>
+    <string name="pref_video_time_lapse_frame_interval_36000000">10 hours</string>
+    <string name="pref_video_time_lapse_frame_interval_4000">4 seconds</string>
+    <string name="pref_video_time_lapse_frame_interval_43200000">12 hours</string>
+    <string name="pref_video_time_lapse_frame_interval_500">0.5 seconds</string>
+    <string name="pref_video_time_lapse_frame_interval_5000">5 seconds</string>
+    <string name="pref_video_time_lapse_frame_interval_5400000">1.5 hour</string>
+    <string name="pref_video_time_lapse_frame_interval_54000000">15 hours</string>
+    <string name="pref_video_time_lapse_frame_interval_6000">6 seconds</string>
+    <string name="pref_video_time_lapse_frame_interval_60000">1 minute</string>
+    <string name="pref_video_time_lapse_frame_interval_600000">10 minutes</string>
+    <string name="pref_video_time_lapse_frame_interval_720000">12 minutes</string>
+    <string name="pref_video_time_lapse_frame_interval_7200000">2 hours</string>
+    <string name="pref_video_time_lapse_frame_interval_86400000">24 hours</string>
+    <string name="pref_video_time_lapse_frame_interval_90000">1.5 minutes</string>
+    <string name="pref_video_time_lapse_frame_interval_900000">15 minutes</string>
+    <string name="pref_video_time_lapse_frame_interval_9000000">2.5 hours</string>
+    <string name="pref_video_time_lapse_frame_interval_default" translatable="false">0</string>
+    <string name="pref_video_time_lapse_frame_interval_off">Off</string>
+    <string name="pref_video_time_lapse_frame_interval_title">Time lapse</string>
+    <string name="process_caching_requests">Processing caching requests</string>
+    <string name="remember_location_no">No thanks</string>
+    <string name="remember_location_prompt">Tag your photos and videos with the locations where they are taken.\n\nOther apps can access this information along with your saved images.</string>
+    <string name="remember_location_title">Remember photo locations?</string>
+    <string name="remember_location_yes">Yes</string>
+    <string name="resume_playing_message">Resume playing from %s ?</string>
+    <string name="resume_playing_restart">Start over</string>
+    <string name="resume_playing_resume">Resume playing</string>
+    <string name="resume_playing_title">Resume video</string>
+    <string name="rotate_left">Rotate left</string>
+    <string name="rotate_right">Rotate right</string>
+    <string msgid="8140440041190264400" name="save">Save</string>
+    <string name="save_into">Saving video to <ns1:g id="album_name">%1$s</ns1:g> \u2026</string>
+    <string name="select_album">Select album</string>
+    <string name="select_all">Select all</string>
+    <string name="select_group">Select group</string>
+    <string name="select_image">Select photo</string>
+    <string name="select_item">Select item</string>
+    <string name="select_video">Select video</string>
+    <string name="sequence_in_set">%1$d of %2$d items:</string>
+    <string name="set_as">Set as</string>
+    <string name="set_duration">Set duration in seconds</string>
+    <string name="set_image">Set picture as</string>
+    <string name="set_label_all_albums">All albums</string>
+    <string name="set_label_local_albums">Local albums</string>
+    <string name="set_label_mtp_devices">MTP devices</string>
+    <string name="set_time_interval">Set Time Interval</string>
+    <string name="set_time_interval_help">Time lapse feature is off. Turn it on to set time interval.</string>
+    <string name="set_timer_help">Countdown timer is off. Turn it on to count down before taking a picture.</string>
+    <string name="set_wallpaper">Set wallpaper</string>
+    <string name="setting_off">Off</string>
+    <string name="setting_off_value" translatable="false">off</string>
+    <string name="setting_on">On</string>
+    <string name="setting_on_value" translatable="false">on</string>
+    <string name="share">Share</string>
+    <string name="share_as_photo">Share as photo</string>
+    <string name="share_panorama">Share panorama</string>
+    <string name="show_all">Images &amp; videos</string>
+    <string name="show_images_only">Images only</string>
+    <string name="show_on_map">Show on map</string>
+    <string name="show_videos_only">Videos only</string>
+    <string name="size_above"><ns1:g id="size">%1$s</ns1:g> or above</string>
+    <string name="size_below"><ns1:g id="size">%1$s</ns1:g> or below</string>
+    <string name="size_between"><ns1:g id="min_size">%1$s</ns1:g> to <ns1:g id="max_size">%2$s</ns1:g></string>
+    <string name="slideshow">Slideshow</string>
+    <string name="slideshow_dream_name">Slideshow</string>
+    <string name="spaceIsLow_content" product="default">Your Storage is running out of space. Change the quality setting or delete some images or other files.</string>
+    <string name="switch_photo_filmstrip">Filmstrip view</string>
+    <string name="switch_photo_fullscreen">Fullscreen view</string>
+    <string name="switch_photo_grid">Grid view</string>
+    <string name="sync_album_error">Couldn\'t download the photos in this album. Retry later.</string>
+    <string name="tab_albums">Albums</string>
+    <string name="tab_photos">Photos</string>
+    <string name="tags">Tags</string>
+    <string name="tap_to_focus">Touch to focus.</string>
+    <string name="time">Time</string>
+    <string name="time_lapse_hours">hours</string>
+    <string name="time_lapse_interval_set">Done</string>
+    <string name="time_lapse_minutes">minutes</string>
+    <string name="time_lapse_seconds">seconds</string>
+    <string name="times">Times</string>
+    <string name="title">Title</string>
+    <string name="trim_action">Trim</string>
+    <string name="trim_label">Trim video</string>
+    <string name="trim_too_short">Can not trim : target video is too short</string>
+    <string name="trimming">Trimming</string>
+    <string name="try_to_set_local_album_available_offline">
+        This item is stored locally and available offline.</string>
+    <string name="undo">UNDO</string>
+    <string name="unit_mm">mm</string>
+    <string name="unknown">Unknown</string>
+    <string name="untagged">Untagged</string>
+    <string name="video_err">Can\'t play video.</string>
+    <string name="video_file_name_format" translatable="false">"'VID'_yyyyMMdd_HHmmss"</string>
+    <string name="video_mute_err">Can\'t mute video.</string>
+    <string name="video_reach_size_limit">Size limit reached.</string>
+    <string name="video_recording_started">Video recording has started.</string>
+    <string name="video_recording_stopped">Video recording has stopped.</string>
+    <string name="video_snapshot_hint">Touch to take photo while recording.</string>
+    <string name="wait">Please wait\u2026</string>
+    <string name="wallpaper">Setting wallpaper\u2026</string>
+    <string name="white_balance">White balance</string>
+    <string name="widget_type">Choose images</string>
+    <string name="widget_type_album">Choose an album</string>
+    <string name="widget_type_photo">Choose an image</string>
+    <string name="widget_type_shuffle">Shuffle all images</string>
+    <string name="width">Width</string>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values/styles.xml -->
+    <eat-comment/>
+    <style name="ActionBarTwoLineItem">
+        <item name="android:background">@drawable/action_bar_two_line_background</item>
+    </style>
+    <style name="ActionBarTwoLinePrimary" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title"/>
+    <style name="ActionBarTwoLineSecondary" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Subtitle"/>
+    <style name="Animation_OnScreenHint">
+        <item name="android:windowEnterAnimation">@anim/on_screen_hint_enter</item>
+        <item name="android:windowExitAnimation">@anim/on_screen_hint_exit</item>
+    </style>
+    <style name="CameraControls">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="DialogPickerTheme" parent="Theme.Gallery">
+    </style>
+    <style name="EffectSettingGrid">
+        <item name="android:layout_marginLeft">@dimen/setting_item_list_margin</item>
+        <item name="android:layout_marginRight">@dimen/setting_item_list_margin</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:numColumns">3</item>
+        <item name="android:verticalSpacing">3dp</item>
+        <item name="android:horizontalSpacing">3dp</item>
+        <item name="android:choiceMode">singleChoice</item>
+    </style>
+    <style name="EffectSettingItem">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">9dp</item>
+        <item name="android:paddingBottom">9dp</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+        <item name="android:background">@drawable/setting_picker</item>
+    </style>
+    <style name="EffectSettingItemTitle">
+        <item name="android:textSize">@dimen/effect_setting_item_text_size</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">1dp</item>
+    </style>
+    <style name="EffectSettingTypeTitle">
+        <item name="android:textSize">@dimen/effect_setting_type_text_size</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:alpha">0.7</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/effect_setting_type_text_min_height</item>
+        <item name="android:paddingLeft">@dimen/effect_setting_type_text_left_padding</item>
+    </style>
+    <style name="EffectTitleSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:background">@android:drawable/divider_horizontal_dark</item>
+    </style>
+    <style name="EffectTypeSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginBottom">14dp</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">#2c2c2c</item>
+    </style>
+    <style name="Holo.ActionBar" parent="android:Widget.Holo.ActionBar">
+        <item name="android:displayOptions">useLogo|showHome</item>
+        <item name="android:background">@drawable/actionbar_translucent</item>
+        <item name="android:backgroundStacked">@null</item>
+    </style>
+    <style name="MediaButton.Play" parent="@android:style/MediaButton.Play">
+        <item name="android:background">@null</item>
+        <item name="android:src">@drawable/icn_media_play</item>
+    </style>
+    <style name="MenuIndicator">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:enabled">false</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="OnScreenHintTextAppearance">
+        <item name="android:textColor">@android:color/primary_text_dark</item>
+        <item name="android:textColorHighlight">#FFFF9200</item>
+        <item name="android:textColorHint">#808080</item>
+        <item name="android:textColorLink">#5C5CFF</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+    <style name="OnScreenHintTextAppearance.Small">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@android:color/secondary_text_dark</item>
+    </style>
+    <style name="OnViewfinderLabel">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:paddingLeft">15dp</item>
+        <item name="android:paddingRight">15dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:background">@drawable/bg_text_on_preview</item>
+    </style>
+    <style name="PanoCustomDialogText">
+        <item name="android:textAppearance">@android:style/TextAppearance.Medium</item>
+    </style>
+    <style name="PanoCustomDialogText_xlarge">
+        <item name="android:textAppearance">@android:style/TextAppearance.Large</item>
+    </style>
+    <style name="PopupTitleSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/popup_title_color</item>
+    </style>
+    <style name="PopupTitleText_xlarge">
+        <item name="android:textSize">@dimen/popup_title_text_size</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/popup_title_color</item>
+        <item name="android:layout_marginLeft">10dp</item>
+    </style>
+    <style name="ReviewControlText_xlarge">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:background">@drawable/bg_pressed_exit_fading</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:paddingTop">10dp</item>
+        <item name="android:paddingBottom">10dp</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+    <style name="ReviewPlayIcon">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:visibility">gone</item>
+        <item name="android:src">@drawable/ic_gallery_play_big</item>
+    </style>
+    <style name="SettingItemList">
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:listSelector">@drawable/bg_pressed</item>
+    </style>
+    <style name="SettingItemText">
+        <item name="android:layout_width">@dimen/setting_item_text_width</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/setting_item_text_size</item>
+    </style>
+    <style name="SettingItemTitle">
+        <item name="android:textSize">@dimen/setting_item_text_size</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="SettingRow">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/setting_row_height</item>
+        <item name="android:paddingLeft">@dimen/setting_item_list_margin</item>
+        <item name="android:paddingRight">@dimen/setting_item_list_margin</item>
+        <item name="android:background">@drawable/setting_picker</item>
+    </style>
+    <style name="SwitcherButton">
+        <item name="android:layout_width">@dimen/switcher_size</item>
+        <item name="android:layout_height">@dimen/switcher_size</item>
+        <item name="android:background">@drawable/bg_pressed_exit_fading</item>
+    </style>
+    <style name="TextAppearance.DialogWindowTitle" parent="">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@color/holo_blue_light</item>
+    </style>
+    <style name="TextAppearance.Medium" parent="@android:style/TextAppearance.Medium"/>
+    <style name="Theme.Camera" parent="Theme.CameraBase">
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:colorBackground">@android:color/black</item>
+        <item name="android:colorBackgroundCacheHint">@android:color/black</item>
+    </style>
+    <style name="Theme.CameraBase" parent="android:Theme.Black.NoTitleBar.Fullscreen"/>
+    <style name="Theme.Crop" parent="Theme.GalleryBase">
+        <item name="android:displayOptions"/>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/Holo.ActionBar</item>
+        <item name="android:colorBackground">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="Theme.FilterShow" parent="Theme.Gallery">
+        <item name="android:windowBackground">@null</item>
+    </style>
+    <style name="Theme.Gallery" parent="Theme.GalleryBase">
+        <item name="android:displayOptions"/>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:actionBarStyle">@style/Holo.ActionBar</item>
+        <item name="android:windowBackground">@android:color/black</item>
+        <item name="android:colorBackground">@null</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="Theme.Gallery.Dialog" parent="android:Theme.Holo.Dialog"/>
+    <style name="Theme.GalleryBase" parent="android:Theme.Holo">
+        <item name="listPreferredItemHeightSmall">48dp</item>
+        <item name="switchStyle">@android:style/Widget.CompoundButton</item>
+    </style>
+    <style name="Theme.ProxyLauncher" parent="@android:Theme.Translucent.NoTitleBar">
+    </style>
+    <style name="UndoBar">
+        <item name="android:layout_marginLeft">4dp</item>
+        <item name="android:layout_marginRight">4dp</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">48dp</item>
+        <item name="android:layout_gravity">bottom</item>
+        <item name="android:background">@drawable/panel_undo_holo</item>
+    </style>
+    <style name="UndoBarSeparator">
+        <item name="android:background">@color/gray</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:paddingRight">12dp</item>
+    </style>
+    <style name="UndoBarTextAppearance">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+    <style name="UndoButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:drawablePadding">8dp</item>
+        <item name="android:background">@drawable/bg_pressed</item>
+    </style>
+    <style name="ViewfinderLabelLayout_xlarge">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">13dp</item>
+    </style>
+    <style name="Widget.Button.Borderless" parent="android:Widget.Button">
+        <item name="android:background">@drawable/bg_pressed</item>
+        <item name="android:textAppearance">@style/TextAppearance.Medium</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:minHeight">48dip</item>
+        <item name="android:minWidth">64dip</item>
+        <item name="android:paddingLeft">4dip</item>
+        <item name="android:paddingRight">4dip</item>
+    </style>
+</resources>

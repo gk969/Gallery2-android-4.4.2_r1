@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values-large/dimens.xml -->
+    <eat-comment/>
+    <dimen name="onscreen_indicators_height">@dimen/onscreen_indicators_height_large</dimen>
+    <dimen name="setting_item_icon_width">@dimen/setting_item_icon_width_large</dimen>
+    <dimen name="setting_popup_right_margin">@dimen/setting_popup_right_margin_large</dimen>
+    <dimen name="setting_popup_window_width">@dimen/setting_popup_window_width_large</dimen>
+    <dimen name="setting_row_height">@dimen/setting_row_height_large</dimen>
+</resources>

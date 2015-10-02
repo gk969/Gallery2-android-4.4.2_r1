@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="D:\android\Gallery2-android-4.4.2_r1\app\libs\android-support-v4.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="0725d32f682f72bdfb3f61a2cd04dc3763710b6c">
+        <dex dex="D:\android\Gallery2-android-4.4.2_r1\app\build\intermediates\pre-dexed\debug\android-support-v4-c0662340b684234e55ba3c2d7b73c1875468dd5e.jar" />
+    </item>
+    <item
+        jar="D:\android\Gallery2-android-4.4.2_r1\app\libs\android-support-v13.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="ca3f431561810d8149c358d50d33d66c136fb326">
+        <dex dex="D:\android\Gallery2-android-4.4.2_r1\app\build\intermediates\pre-dexed\debug\android-support-v13-461ad3ca45d21b2b219c2506ec4236aa11c8f3ba.jar" />
+    </item>
+
+</items>

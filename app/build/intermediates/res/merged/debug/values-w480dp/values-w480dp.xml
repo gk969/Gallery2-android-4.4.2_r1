@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values-w480dp/bool.xml -->
+    <eat-comment/>
+    <bool name="show_action_bar_title">true</bool>
+</resources>

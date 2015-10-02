@@ -1,0 +1,215 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:3:1-88:12
+	xmlns:android
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:5:9-67
+	package
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:6:9-46
+		INJECTED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml
+		INJECTED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:4:9-40
+	android:versionCode
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:3:11-38
+		INJECTED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml
+		INJECTED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml
+uses-sdk
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:10:5-74
+	android:targetSdkVersion
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:10:42-71
+		INJECTED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml
+		INJECTED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:10:15-41
+		INJECTED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml
+		INJECTED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:12:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:13:22-76
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:14:5-79
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:14:22-76
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:15:5-71
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:15:22-68
+uses-permission#android.permission.INTERNET
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:16:5-67
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:16:22-64
+uses-permission#android.permission.MANAGE_ACCOUNTS
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:17:5-74
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:17:22-71
+uses-permission#android.permission.NFC
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:18:5-62
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:18:22-59
+uses-permission#android.permission.READ_SYNC_SETTINGS
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:19:5-77
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:19:22-74
+uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:20:5-81
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:20:22-78
+uses-permission#android.permission.SET_WALLPAPER
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:21:5-72
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:21:22-69
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:22:5-74
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:22:22-71
+uses-permission#android.permission.VIBRATE
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:23:5-66
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:23:22-63
+uses-permission#android.permission.WAKE_LOCK
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:24:22-65
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:25:5-81
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:25:22-78
+uses-permission#android.permission.WRITE_SETTINGS
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:26:5-73
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:26:22-70
+uses-permission#android.permission.WRITE_SYNC_SETTINGS
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:27:5-78
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:27:22-75
+supports-screens
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:29:5-31:41
+	android:largeScreens
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:30:42-69
+	android:anyDensity
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:31:13-38
+	android:normalScreens
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:30:13-41
+	android:smallScreens
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:29:23-51
+application
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:33:5-87:19
+	android:label
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:36:10-42
+	android:allowBackup
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:39:10-36
+	android:icon
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:35:10-52
+	android:theme
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:37:13-49
+	android:hardwareAccelerated
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:40:13-47
+	android:largeHeap
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:41:13-37
+	android:restoreAnyVersion
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:42:13-45
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:34:10-71
+	android:logo
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:38:13-55
+uses-library#com.google.android.media.effects
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:43:9-98
+	android:required
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:43:71-95
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:43:23-70
+activity#com.gk969.gallery.gallery3d.app.GalleryActivity
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:45:9-53:20
+	android:label
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:45:82-114
+	android:configChanges
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:46:17-78
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:45:19-81
+intent-filter#android.intent.action.MAIN+android.intent.category.APP_GALLERY+android.intent.category.DEFAULT+android.intent.category.LAUNCHER
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:47:13-52:29
+action#android.intent.action.MAIN
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:48:17-69
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:48:25-66
+category#android.intent.category.DEFAULT
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:49:17-76
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:49:27-73
+category#android.intent.category.LAUNCHER
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:50:17-77
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:50:27-74
+category#android.intent.category.APP_GALLERY
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:51:17-80
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:51:27-77
+activity#com.gk969.gallery.gallery3d.app.Wallpaper
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:55:9-69:20
+	android:configChanges
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:56:17-78
+	android:theme
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:57:17-76
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:55:19-75
+intent-filter#android.intent.action.ATTACH_DATA+android.intent.category.DEFAULT
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:58:13-62:29
+	android:label
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:58:28-74
+action#android.intent.action.ATTACH_DATA
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:59:17-76
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:59:25-73
+data
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:60:17-52
+	android:mimeType
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:60:23-49
+intent-filter#android.intent.action.SET_WALLPAPER+android.intent.category.DEFAULT
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:63:13-66:29
+	android:label
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:63:28-60
+action#android.intent.action.SET_WALLPAPER
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:64:17-78
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:64:25-75
+meta-data#android.wallpaper.preview
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:67:13-68:72
+	android:resource
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:68:21-69
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:67:24-64
+activity#com.gk969.gallery.gallery3d.app.DialogPicker
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:74:9-76:59
+	android:configChanges
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:75:17-78
+	android:theme
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:76:17-57
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:74:19-78
+activity#com.gk969.gallery.gallery3d.app.AlbumPicker
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:77:9-79:59
+	android:configChanges
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:78:17-78
+	android:theme
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:79:17-57
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:77:19-77
+service#com.gk969.gallery.gallery3d.app.PackagesMonitor$AsyncService
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:81:9-95
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:81:18-93
+service#com.gk969.gallery.gallery3d.gadget.WidgetService
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:82:9-83:75
+	android:permission
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:83:17-73
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:82:18-81
+service#com.gk969.gallery.gallery3d.app.BatchService
+ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:85:9-80
+	android:name
+		ADDED from D:\android\Gallery2-android-4.4.2_r1\app\src\main\AndroidManifest.xml:85:18-77

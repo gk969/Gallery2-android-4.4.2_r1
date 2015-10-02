@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/D:/android/Gallery2-android-4.4.2_r1/app/src/main/res/values-sw360dp-land/dimensions.xml -->
+    <eat-comment/>
+    <dimen name="capture_margin_top">8dip</dimen>
+</resources>
